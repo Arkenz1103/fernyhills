@@ -301,3 +301,26 @@ html[data-reveal] main section:not(.hero):not(.no-reveal) img[data-in] {
     transform: none;
   }
 }
+
+/* Contact form phone field (react-phone-number-input): the wrapper carries the field border,
+   so the inner number box is borderless and the country picker sits inside it. */
+.contact-phone {
+  --PhoneInput-color--focus: var(--color-brand-cyan);
+  --PhoneInputCountryFlag-height: 1.1em;
+  --PhoneInputCountrySelectArrow-opacity: 0.7;
+  gap: 0.25rem;
+}
+.contact-phone .PhoneInputCountry {
+  align-self: stretch;
+  padding-right: 0.75rem;
+  margin-right: 0.25rem;
+  border-right: 1px solid var(--color-slate-200);
+}
+.contact-phone .PhoneInputInput {
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 0.75rem 1rem 0.75rem 0.5rem;
+  color: var(--color-slate-800);
+  font: inherit;
+}

@@ -1,0 +1,473 @@
+- generic [ref=f150e1]:
+  - link "Skip to main content" [ref=f150e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f150e3]:
+    - navigation "Main" [ref=f150e4]:
+      - link "Ferny Hills Physiotherapy – Home" [ref=f150e5] [cursor=pointer]:
+        - /url: /
+        - img "Ferny Hills Physiotherapy" [ref=f150e6]
+      - list [ref=f150e7]:
+        - listitem [ref=f150e8]:
+          - link "Home" [ref=f150e9] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f150e10]:
+          - link "Services" [ref=f150e11] [cursor=pointer]:
+            - /url: /services/
+        - listitem [ref=f150e12]:
+          - link "Arthritis Treatment" [ref=f150e13] [cursor=pointer]:
+            - /url: /arthritis-treatment/
+        - listitem [ref=f150e14]:
+          - link "Sports Physio Rehabilitation" [ref=f150e15] [cursor=pointer]:
+            - /url: /sports-physio-rehabilitation/
+        - listitem [ref=f150e16]:
+          - link "Back Pain" [ref=f150e17] [cursor=pointer]:
+            - /url: /back-pain/
+        - listitem [ref=f150e18]:
+          - link "Hydrotherapy" [ref=f150e19] [cursor=pointer]:
+            - /url: /hydrotherapy/
+        - listitem [ref=f150e20]:
+          - link "Contact" [ref=f150e21] [cursor=pointer]:
+            - /url: /contact-us/
+      - link "Book Online" [ref=f150e23] [cursor=pointer]:
+        - /url: http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==
+  - main [ref=f150e27]:
+    - generic [ref=f150e30]:
+      - heading "Let us know what we can do for you" [level=1] [ref=f150e31]
+      - paragraph [ref=f150e33]: Contact Us in Ferny Hills
+    - generic [ref=f150e35]:
+      - generic [ref=f150e36]:
+        - heading "Let's talk" [level=2] [ref=f150e37]
+        - paragraph [ref=f150e38]: If you have experienced any musculoskeletal problems and would like to increase your quality of life, don’t hesitate to make an appointment with one of our physiotherapists. Help is only a call away.
+        - list [ref=f150e39]:
+          - listitem [ref=f150e40]:
+            - 'link "Phone: 07 3351 5177" [ref=f150e41] [cursor=pointer]':
+              - /url: tel:0733515177
+              - generic [ref=f150e45]:
+                - generic [ref=f150e46]: "Phone:"
+                - generic [ref=f150e47]: 07 3351 5177
+          - listitem [ref=f150e48]:
+            - 'link "Email: info@fernyhillsphysiotherapy.com.au" [ref=f150e49] [cursor=pointer]':
+              - /url: mailto:info@fernyhillsphysiotherapy.com.au
+              - generic [ref=f150e54]:
+                - generic [ref=f150e55]: "Email:"
+                - generic [ref=f150e56]: info@fernyhillsphysiotherapy.com.au
+          - listitem [ref=f150e57]:
+            - generic [ref=f150e62]:
+              - generic [ref=f150e63]: "Address:"
+              - generic [ref=f150e64]: Ferny Hills Physiotherapy Centre
+              - generic [ref=f150e65]: 170 Patricks Road Ferny Hills QLD 4055
+          - listitem [ref=f150e66]:
+            - generic [ref=f150e71]: Appts available now 7am to 6pm
+      - generic [ref=f150e74]:
+        - generic [ref=f150e75]:
+          - generic [ref=f150e76]:
+            - generic [ref=f150e77]: Name *
+            - textbox "Name" [ref=f150e78]
+          - generic [ref=f150e79]:
+            - generic [ref=f150e80]: Email *
+            - textbox "Email" [ref=f150e81]
+        - generic [ref=f150e82]:
+          - text: Phone Number
+          - generic [ref=f150e83]:
+            - combobox "Phone number country" [ref=f150e85] [cursor=pointer]:
+              - option "Afghanistan"
+              - option "Åland Islands"
+              - option "Albania"
+              - option "Algeria"
+              - option "American Samoa"
+              - option "Andorra"
+              - option "Angola"
+              - option "Anguilla"
+              - option "Antigua and Barbuda"
+              - option "Argentina"
+              - option "Armenia"
+              - option "Aruba"
+              - option "Ascension Island"
+              - option "Australia"
+              - option "Austria"
+              - option "Azerbaijan"
+              - option "Bahamas"
+              - option "Bahrain"
+              - option "Bangladesh"
+              - option "Barbados"
+              - option "Belarus"
+              - option "Belgium"
+              - option "Belize"
+              - option "Benin"
+              - option "Bermuda"
+              - option "Bhutan"
+              - option "Bolivia"
+              - option "Bonaire, Sint Eustatius and Saba"
+              - option "Bosnia and Herzegovina"
+              - option "Botswana"
+              - option "Brazil"
+              - option "British Indian Ocean Territory"
+              - option "Brunei Darussalam"
+              - option "Bulgaria"
+              - option "Burkina Faso"
+              - option "Burundi"
+              - option "Cambodia"
+              - option "Cameroon"
+              - option "Canada"
+              - option "Cape Verde"
+              - option "Cayman Islands"
+              - option "Central African Republic"
+              - option "Chad"
+              - option "Chile"
+              - option "China"
+              - option "Christmas Island"
+              - option "Cocos (Keeling) Islands"
+              - option "Colombia"
+              - option "Comoros"
+              - option "Congo"
+              - option "Congo, Democratic Republic of the"
+              - option "Cook Islands"
+              - option "Costa Rica"
+              - option "Cote d'Ivoire"
+              - option "Croatia"
+              - option "Cuba"
+              - option "Curaçao"
+              - option "Cyprus"
+              - option "Czech Republic"
+              - option "Denmark"
+              - option "Djibouti"
+              - option "Dominica"
+              - option "Dominican Republic"
+              - option "Ecuador"
+              - option "Egypt"
+              - option "El Salvador"
+              - option "Equatorial Guinea"
+              - option "Eritrea"
+              - option "Estonia"
+              - option "Ethiopia"
+              - option "Falkland Islands"
+              - option "Faroe Islands"
+              - option "Federated States of Micronesia"
+              - option "Fiji"
+              - option "Finland"
+              - option "France"
+              - option "French Guiana"
+              - option "French Polynesia"
+              - option "Gabon"
+              - option "Gambia"
+              - option "Georgia"
+              - option "Germany"
+              - option "Ghana"
+              - option "Gibraltar"
+              - option "Greece"
+              - option "Greenland"
+              - option "Grenada"
+              - option "Guadeloupe"
+              - option "Guam"
+              - option "Guatemala"
+              - option "Guernsey"
+              - option "Guinea"
+              - option "Guinea-Bissau"
+              - option "Guyana"
+              - option "Haiti"
+              - option "Holy See (Vatican City State)"
+              - option "Honduras"
+              - option "Hong Kong"
+              - option "Hungary"
+              - option "Iceland"
+              - option "India"
+              - option "Indonesia"
+              - option "Iran"
+              - option "Iraq"
+              - option "Ireland"
+              - option "Isle of Man"
+              - option "Israel"
+              - option "Italy"
+              - option "Jamaica"
+              - option "Japan"
+              - option "Jersey"
+              - option "Jordan"
+              - option "Kazakhstan"
+              - option "Kenya"
+              - option "Kiribati"
+              - option "Kosovo"
+              - option "Kuwait"
+              - option "Kyrgyzstan"
+              - option "Laos"
+              - option "Latvia"
+              - option "Lebanon"
+              - option "Lesotho"
+              - option "Liberia"
+              - option "Libya"
+              - option "Liechtenstein"
+              - option "Lithuania"
+              - option "Luxembourg"
+              - option "Macao"
+              - option "Madagascar"
+              - option "Malawi"
+              - option "Malaysia"
+              - option "Maldives"
+              - option "Mali"
+              - option "Malta"
+              - option "Marshall Islands"
+              - option "Martinique"
+              - option "Mauritania"
+              - option "Mauritius"
+              - option "Mayotte"
+              - option "Mexico"
+              - option "Moldova"
+              - option "Monaco"
+              - option "Mongolia"
+              - option "Montenegro"
+              - option "Montserrat"
+              - option "Morocco"
+              - option "Mozambique"
+              - option "Myanmar"
+              - option "Namibia"
+              - option "Nauru"
+              - option "Nepal"
+              - option "Netherlands"
+              - option "New Caledonia"
+              - option "New Zealand"
+              - option "Nicaragua"
+              - option "Niger"
+              - option "Nigeria"
+              - option "Niue"
+              - option "Norfolk Island"
+              - option "North Korea"
+              - option "North Macedonia"
+              - option "Northern Mariana Islands"
+              - option "Norway"
+              - option "Oman"
+              - option "Pakistan"
+              - option "Palau"
+              - option "Palestine"
+              - option "Panama"
+              - option "Papua New Guinea"
+              - option "Paraguay"
+              - option "Peru"
+              - option "Philippines" [selected]
+              - option "Poland"
+              - option "Portugal"
+              - option "Puerto Rico"
+              - option "Qatar"
+              - option "Reunion"
+              - option "Romania"
+              - option "Russia"
+              - option "Rwanda"
+              - option "Saint Barthélemy"
+              - option "Saint Helena"
+              - option "Saint Kitts and Nevis"
+              - option "Saint Lucia"
+              - option "Saint Martin (French Part)"
+              - option "Saint Pierre and Miquelon"
+              - option "Saint Vincent and the Grenadines"
+              - option "Samoa"
+              - option "San Marino"
+              - option "Sao Tome and Principe"
+              - option "Saudi Arabia"
+              - option "Senegal"
+              - option "Serbia"
+              - option "Seychelles"
+              - option "Sierra Leone"
+              - option "Singapore"
+              - option "Sint Maarten"
+              - option "Slovakia"
+              - option "Slovenia"
+              - option "Solomon Islands"
+              - option "Somalia"
+              - option "South Africa"
+              - option "South Korea"
+              - option "South Sudan"
+              - option "Spain"
+              - option "Sri Lanka"
+              - option "Sudan"
+              - option "Suriname"
+              - option "Svalbard and Jan Mayen"
+              - option "Swaziland"
+              - option "Sweden"
+              - option "Switzerland"
+              - option "Syria"
+              - option "Taiwan"
+              - option "Tajikistan"
+              - option "Tanzania"
+              - option "Thailand"
+              - option "Timor-Leste"
+              - option "Togo"
+              - option "Tokelau"
+              - option "Tonga"
+              - option "Trinidad and Tobago"
+              - option "Tristan da Cunha"
+              - option "Tunisia"
+              - option "Turkey"
+              - option "Turkmenistan"
+              - option "Turks and Caicos Islands"
+              - option "Tuvalu"
+              - option "Uganda"
+              - option "Ukraine"
+              - option "United Arab Emirates"
+              - option "United Kingdom"
+              - option "United States"
+              - option "Uruguay"
+              - option "Uzbekistan"
+              - option "Vanuatu"
+              - option "Venezuela"
+              - option "Vietnam"
+              - option "Virgin Islands, British"
+              - option "Virgin Islands, U.S."
+              - option "Wallis and Futuna"
+              - option "Western Sahara"
+              - option "Yemen"
+              - option "Zambia"
+              - option "Zimbabwe"
+            - textbox "Phone Number" [active] [ref=f150e98]: +63 2 5555 5555
+        - generic [ref=f150e99]:
+          - generic [ref=f150e100]: Message *
+          - textbox "Message" [ref=f150e101]
+        - button "Send Message" [ref=f150e102]
+      - iframe [ref=f150e107]
+      - generic [ref=f150e108]:
+        - generic [ref=f150e109]:
+          - paragraph [ref=f150e110]: Visit the clinic
+          - heading "Find us in Ferny Hills" [level=2] [ref=f150e111]
+          - paragraph [ref=f150e112]: We're at 170 Patricks Road Ferny Hills QLD 4055. Appts available now 7am to 6pm.
+          - generic [ref=f150e113]:
+            - link "Get directions" [ref=f150e114] [cursor=pointer]:
+              - /url: https://www.google.com/maps/dir/?api=1&destination=170%20Patricks%20Road%2C%20Ferny%20Hills%20QLD%204055
+            - link "Call 07 3351 5177" [ref=f150e117] [cursor=pointer]:
+              - /url: tel:0733515177
+            - link "Book online" [ref=f150e120] [cursor=pointer]:
+              - /url: http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==
+        - generic [ref=f150e124]:
+          - paragraph [ref=f150e125]: Health funds we accept
+          - list [ref=f150e126]:
+            - listitem [ref=f150e127]:
+              - img "Bupa" [ref=f150e128]
+            - listitem [ref=f150e129]:
+              - img "Medibank" [ref=f150e130]
+            - listitem [ref=f150e131]:
+              - img "HCF" [ref=f150e132]
+            - listitem [ref=f150e133]:
+              - img "nib" [ref=f150e134]
+    - generic [ref=f150e136]:
+      - generic [ref=f150e137]:
+        - heading "Areas We Service" [level=2] [ref=f150e138]
+        - paragraph [ref=f150e139]: Physiotherapy
+      - list [ref=f150e140]:
+        - listitem [ref=f150e141]:
+          - link "Everton Hills →" [ref=f150e142] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-hills/
+        - listitem [ref=f150e146]:
+          - link "Samford →" [ref=f150e147] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-samford/
+        - listitem [ref=f150e151]:
+          - link "Everton Park →" [ref=f150e152] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-park/
+        - listitem [ref=f150e156]:
+          - link "Stafford →" [ref=f150e157] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-stafford/
+        - listitem [ref=f150e161]:
+          - link "Samford →" [ref=f150e162] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-samford/
+        - listitem [ref=f150e166]:
+          - link "Arana Hills →" [ref=f150e167] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-arana-hills/
+        - listitem [ref=f150e171]:
+          - link "Bunya →" [ref=f150e172] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-bunya/
+        - listitem [ref=f150e176]:
+          - link "Ferny Grove →" [ref=f150e177] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-ferny-grove/
+        - listitem [ref=f150e181]:
+          - link "Keperra →" [ref=f150e182] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-keperra/
+        - listitem [ref=f150e186]:
+          - link "Alderley →" [ref=f150e187] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-alderley/
+        - listitem [ref=f150e191]:
+          - link "Everton Park →" [ref=f150e192] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-park/
+        - listitem [ref=f150e196]:
+          - link "Everton Hills →" [ref=f150e197] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-hills/
+        - listitem [ref=f150e201]:
+          - link "Albany Creek →" [ref=f150e202] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-albany-creek/
+        - listitem [ref=f150e206]:
+          - link "McDowall →" [ref=f150e207] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-mcdowall/
+        - listitem [ref=f150e211]:
+          - link "Draper →" [ref=f150e212] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-draper/
+        - listitem [ref=f150e216]:
+          - link "The Gap →" [ref=f150e217] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-the-gap/
+        - listitem [ref=f150e221]:
+          - link "Mitchelton →" [ref=f150e222] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-mitchelton/
+        - listitem [ref=f150e226]:
+          - link "Stafford Heights →" [ref=f150e227] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-stafford-heights/
+        - listitem [ref=f150e231]:
+          - link "Upper Kedron →" [ref=f150e232] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-upper-kedron/
+        - listitem [ref=f150e236]:
+          - link "Enoggera →" [ref=f150e237] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-enoggera/
+  - contentinfo [ref=f150e241]:
+    - generic [ref=f150e242]:
+      - generic [ref=f150e243]:
+        - link "Ferny Hills Physiotherapy – Home" [ref=f150e244] [cursor=pointer]:
+          - /url: /
+          - img "Ferny Hills Physiotherapy" [ref=f150e245]
+        - paragraph [ref=f150e246]: Ferny Hills Physiotherapy is a physiotherapy clinic located at 170 Patricks Road, Ferny Hills QLD, Australia, offering services such as sports rehabilitation, arthritis treatment, back pain management, and hydrotherapy.
+        - link "Find us on Yellow Pages" [ref=f150e247] [cursor=pointer]:
+          - /url: https://www.yellowpages.com.au/qld/ferny-hills/ferny-hills-physiotherapy-12076332-listing.html
+      - navigation "Quick Links" [ref=f150e248]:
+        - heading "Quick Links" [level=2] [ref=f150e249]
+        - list [ref=f150e250]:
+          - listitem [ref=f150e251]:
+            - link "Home" [ref=f150e252] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f150e253]:
+            - link "Services" [ref=f150e254] [cursor=pointer]:
+              - /url: /services/
+          - listitem [ref=f150e255]:
+            - link "Arthritis Treatment" [ref=f150e256] [cursor=pointer]:
+              - /url: /arthritis-treatment/
+          - listitem [ref=f150e257]:
+            - link "Sports Physio Rehabilitation" [ref=f150e258] [cursor=pointer]:
+              - /url: /sports-physio-rehabilitation/
+          - listitem [ref=f150e259]:
+            - link "Back Pain" [ref=f150e260] [cursor=pointer]:
+              - /url: /back-pain/
+          - listitem [ref=f150e261]:
+            - link "Hydrotherapy" [ref=f150e262] [cursor=pointer]:
+              - /url: /hydrotherapy/
+          - listitem [ref=f150e263]:
+            - link "Contact" [ref=f150e264] [cursor=pointer]:
+              - /url: /contact-us/
+      - generic [ref=f150e265]:
+        - generic [ref=f150e266]:
+          - term [ref=f150e267]: "Phone:"
+          - definition [ref=f150e268]:
+            - link "07 3351 5177" [ref=f150e269] [cursor=pointer]:
+              - /url: tel:0733515177
+        - generic [ref=f150e270]:
+          - term [ref=f150e271]: "Address:"
+          - definition [ref=f150e272]:
+            - generic [ref=f150e273]: 170 Patricks Road Ferny Hills QLD 4055
+        - generic [ref=f150e274]:
+          - term [ref=f150e275]: "Email:"
+          - definition [ref=f150e276]:
+            - link "info@fernyhillsphysiotherapy.com.au" [ref=f150e277] [cursor=pointer]:
+              - /url: mailto:info@fernyhillsphysiotherapy.com.au
+        - generic [ref=f150e278]:
+          - term [ref=f150e279]: "Hours:"
+          - definition [ref=f150e280]: Appts available now 7am to 6pm
+    - generic [ref=f150e282]:
+      - paragraph [ref=f150e283]:
+        - text: Copyright © 2026 Ferny Hills Physiotherapy ·
+        - link "Privacy Policy" [ref=f150e284] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/privacy-policy/
+      - paragraph [ref=f150e285]:
+        - text: Website design and hosting by
+        - link "WaynAI" [ref=f150e286] [cursor=pointer]:
+          - /url: https://waynai.com.au/
+  - button "Open Next.js Dev Tools" [ref=f150e292] [cursor=pointer]
+  - alert [ref=f150e296]
