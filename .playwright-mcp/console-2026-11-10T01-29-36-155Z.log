@@ -1,0 +1,4 @@
+[     425ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:761
+[     469ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:761
+[  191863ms] [ERROR] Access to fetch at 'https://fernyhillsphysiotherapy.com.au/arthritis-treatment/' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3000/services/:1
+[  191864ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://fernyhillsphysiotherapy.com.au/arthritis-treatment/:1

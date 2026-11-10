@@ -66,7 +66,7 @@ export function BannerSection({
 
 export function CtaSection({ heading, paragraphs, cta }: { heading: string; paragraphs: string[]; cta: Cta }) {
   return (
-    <section className="py-20 sm:py-24">
+    <section className="pt-20 pb-12 sm:pt-24 sm:pb-16">
       <div className="container-x">
         <div className="relative isolate overflow-hidden rounded-3xl bg-brand-blue px-6 py-14 shadow-card-hover sm:px-14 lg:flex lg:items-center lg:justify-between lg:gap-12">
           <div className="absolute -right-24 -top-24 -z-10 h-72 w-72 rounded-full bg-brand-teal-bright/40 blur-3xl" />
@@ -101,7 +101,7 @@ export function ConditionsGrid({ heading, intro, items }: Extract<Block, { type:
       <div className="container-x">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="heading">{heading}</h2>
-          <p className="mt-4 text-lg text-slate-600">{intro}</p>
+          <p className="mt-4 text-lg text-slate-700">{intro}</p>
         </div>
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
@@ -151,18 +151,18 @@ export function PageBlocks({ blocks }: { blocks: Block[] }) {
 
 export function AreasWeService() {
   return (
-    <section className="border-t border-slate-100 bg-white py-16">
+    <section className="border-t border-slate-100 bg-white pt-12 pb-16 sm:pt-14">
       <div className="container-x">
         <div className="text-center">
           <h2 className="heading">Areas We Service</h2>
           <p className="eyebrow mt-3 justify-center">Physiotherapy</p>
         </div>
-        <ul className="mt-10 flex flex-wrap justify-center gap-2.5">
+        <ul className="reveal-group mt-10 flex flex-wrap justify-center gap-2.5">
           {serviceAreas.map((area, i) => (
             <li key={`${area.name}-${i}`}>
               <a
                 href={area.href}
-                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-brand-teal-bright hover:bg-brand-light hover:text-brand-blue"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-brand-teal-bright hover:bg-brand-light hover:text-brand-blue"
               >
                 <MapPin className="h-3.5 w-3.5 text-brand-teal-bright" aria-hidden />
                 {area.name} →

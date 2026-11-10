@@ -94,7 +94,7 @@ export default function Navbar() {
                     "after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-blue after:transition-transform after:duration-300 motion-reduce:after:transition-none",
                     isActive(item.href)
                       ? "font-semibold text-brand-blue after:scale-x-100"
-                      : "text-brand-ink/80 after:scale-x-0 hover:text-brand-blue hover:after:scale-x-100",
+                      : "text-brand-ink after:scale-x-0 hover:text-brand-blue hover:after:scale-x-100",
                   )}
                 >
                   {item.label}

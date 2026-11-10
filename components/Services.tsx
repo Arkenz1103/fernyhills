@@ -51,7 +51,7 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section id="services" aria-labelledby="services-heading" className="py-20 sm:py-28">
+    <section id="services" aria-labelledby="services-heading" className="pt-20 pb-8 sm:pt-24 sm:pb-12">
       <div className="container-x">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
@@ -95,7 +95,7 @@ export default function Services() {
                     <Icon className="size-6" aria-hidden />
                   </span>
                   <h3 className="text-xl leading-snug font-bold">{title}</h3>
-                  <p className="mt-3 flex-1 text-[0.95rem] leading-relaxed">{excerpt}</p>
+                  <p className="mt-3 flex-1 text-lg leading-relaxed">{excerpt}</p>
                   <span className="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-sm font-semibold text-brand-blue">
                     Learn more
                     <span className="flex size-9 items-center justify-center rounded-full bg-brand-pale transition-all duration-300 group-hover:bg-brand-blue group-hover:text-white">

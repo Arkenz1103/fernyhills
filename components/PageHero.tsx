@@ -15,12 +15,12 @@ export default function PageHero({
   crumb: string;
 }) {
   return (
-    <section className="relative isolate overflow-hidden">
-      <Image src={image} alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
+    <section className="hero relative isolate overflow-hidden">
+      <Image src={image} alt="" fill priority sizes="100vw" className="hero-media -z-20 object-cover" />
       <div className="absolute inset-0 -z-10 bg-linear-to-r from-brand-navy/95 via-brand-blue/85 to-brand-teal/60" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_bottom_right,rgba(59,154,178,0.5),transparent_60%)]" />
-      <div className="container-x py-20 sm:py-28">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-white/70">
+      <div className="hero-enter container-x py-20 sm:py-28">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-white/90">
           <Link href="/" className="hover:text-white">
             Home
           </Link>

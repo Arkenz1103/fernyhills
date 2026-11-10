@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <About />
       <TrustBar />
       <Services />
-      <About />
       <Specialists />
       <ContactCta />
       <ServiceAreas />

@@ -17,7 +17,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact Us in Ferny Hills"
         title="Let us know what we can do for you"
-        image="/images/clinic-2.jpg"
+        image="/images/services/contact-banner.webp"
         crumb="Contact"
       />
 
@@ -25,7 +25,7 @@ export default function ContactPage() {
         <div className="container-x grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <h2 className="heading">Let&apos;s talk</h2>
-            <p className="mt-5 leading-relaxed text-slate-600">
+            <p className="mt-5 leading-relaxed text-slate-700">
               If you have experienced any musculoskeletal problems and would like to increase your quality of life,
               don’t hesitate to make an appointment with one of our physiotherapists. Help is only a call away.
             </p>
@@ -44,8 +44,8 @@ export default function ContactPage() {
                       <Icon className="h-5 w-5" aria-hidden />
                     </span>
                     <span className="min-w-0">
-                      <span className="block text-xs font-semibold uppercase tracking-wide text-slate-500">{label}</span>
-                      <span className="block break-all font-semibold text-brand-ink group-hover:text-brand-blue">
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-slate-700">{label}</span>
+                      <span className="block break-all text-lg font-semibold text-brand-ink group-hover:text-brand-blue">
                         {value}
                       </span>
                     </span>
@@ -57,16 +57,16 @@ export default function ContactPage() {
                   <MapPin className="h-5 w-5" aria-hidden />
                 </span>
                 <span>
-                  <span className="block text-xs font-semibold uppercase tracking-wide text-slate-500">Address:</span>
-                  <span className="block font-semibold text-brand-ink">{site.centreName}</span>
-                  <span className="block text-slate-600">{site.address}</span>
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-slate-700">Address:</span>
+                  <span className="block text-lg font-semibold text-brand-ink">{site.centreName}</span>
+                  <span className="block text-lg text-slate-700">{site.address}</span>
                 </span>
               </li>
               <li className="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-card ring-1 ring-slate-100">
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-brand-blue to-brand-teal-bright text-white">
                   <Clock className="h-5 w-5" aria-hidden />
                 </span>
-                <span className="font-semibold text-brand-ink">{site.hours}</span>
+                <span className="text-lg font-semibold text-brand-ink">{site.hours}</span>
               </li>
             </ul>
           </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
         <BannerSection
           heading="We use the best equipment for clients"
           cta={{ label: `Call ${site.phone}`, kind: "call" }}
-          image="/images/equipment.jpg"
+          image="/images/services/equipment-banner.webp"
         />
       </div>
 

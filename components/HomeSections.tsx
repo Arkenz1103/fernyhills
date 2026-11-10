@@ -1,100 +1,106 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Clock, MapPin, Phone, Send, Sparkles } from "lucide-react";
+import { ArrowRight, Clock, MapPin, Phone, Send } from "lucide-react";
 import { serviceAreas, site } from "@/lib/site";
 import { keepTogether } from "@/lib/utils";
 
-/** About block: image (with dotted backdrop and floating caption) on the left, copy on the right. */
+/** About block: image (with dotted backdrop) on the left, copy on the right; on desktop the photo stretches to the copy's height so both columns line up top and bottom. */
 export function About() {
   return (
     <section aria-labelledby="about-heading" className="bg-brand-pale py-20 sm:py-28">
-      <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+      <div className="container-x grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-stretch lg:gap-20">
         <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
           <div aria-hidden className="dot-grid absolute -top-6 -left-6 h-2/3 w-2/3 rounded-3xl" />
-          <div className="relative aspect-[5/6] overflow-hidden rounded-3xl shadow-card">
+          <div className="relative aspect-[5/6] overflow-hidden rounded-3xl shadow-card lg:aspect-auto lg:h-full lg:min-h-[32rem]">
             <Image
-              src="/images/clinic-2.jpg"
-              alt="A physiotherapist guiding a patient through a shoulder mobility exercise"
+              src="/images/about-trio.jpg"
+              alt="A group of smiling older adults laughing together outdoors"
               fill
               sizes="(min-width:1024px) 45vw, 100vw"
-              className="object-cover object-[50%_35%]"
+              className="object-cover object-[25%_45%]"
             />
-          </div>
-          <div className="glass absolute right-4 -bottom-6 left-4 flex items-center gap-4 rounded-2xl p-4 sm:right-auto sm:-bottom-8 sm:left-auto sm:-ml-6 sm:max-w-xs lg:-right-8 lg:left-auto">
-            <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-teal text-white">
-              <Sparkles className="size-5" aria-hidden />
-            </span>
-            <p className="text-sm leading-snug">
-              <span className="block font-bold text-brand-ink">State-of-the-art equipment</span>
-              Expert physiotherapists, one personalised plan
-            </p>
           </div>
         </div>
 
-        <div className="pt-6 lg:pt-0">
+        <div className="flex flex-col justify-center lg:py-4">
           <p className="eyebrow">About us</p>
-          <h2 id="about-heading" className="mt-3 text-4xl leading-tight font-bold tracking-tight sm:text-5xl">
-            The best physio clinic in Ferny&nbsp;Hills
+          <h2
+            id="about-heading"
+            className="mt-3 text-4xl leading-[1.1] font-bold tracking-tight text-balance sm:text-[50px]"
+          >
+            Physiotherapist in Ferny&nbsp;Hills
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-brand-ink/85">
-            At Ferny Hills Physiotherapy Centre, we have gained an outstanding reputation as the best physio clinic in
-            Ferny Hill. This is because we only use state-of-the-art equipment and have expert physiotherapists.
-          </p>
-          <p className="mt-5 leading-relaxed">
-            At our centre, we work with you to help you understand your condition or injury. Together, we will identify
-            your therapy needs, assess your pain and develop a treatment plan with you to restore full function to your
-            body. Additionally, we will provide you with tools, professional advice and a supplemental plan to help you
-            prevent further problems.
-          </p>
-          <p className="mt-5 leading-relaxed">
-            Our goal is to teach you how to carry out your treatment in the future to maintain your overall wellness.
-          </p>
+          <span aria-hidden className="mt-6 block h-1 w-14 rounded-full bg-brand-cyan" />
+
+          <div className="mt-7 max-w-xl space-y-5 text-lg leading-[1.8] text-brand-body">
+            <p className="text-lg leading-relaxed font-medium text-brand-ink">
+              Have you ever had a stroke, joint injury or other condition that resulted in a loss of physical movement?
+              If so, you were likely referred to a physiotherapy centre. A physiotherapy clinic is an establishment that
+              aims to restore and maintain functional movement to their clients.
+            </p>
+            <p>
+              At Ferny Hills Physiotherapy Centre, we have gained an outstanding reputation as the best physio clinic in
+              Ferny Hill. This is because we only use state-of-the-art equipment and have expert physiotherapists.
+            </p>
+            <p>
+              At our centre, we work with you to help you understand your condition or injury. Together, we will
+              identify your therapy needs, assess your pain and develop a treatment plan with you to restore full
+              function to your body. Additionally, we will provide you with tools, professional advice and a
+              supplemental plan to help you prevent further problems.
+            </p>
+            <p className="border-l-4 border-brand-cyan pl-5 font-semibold text-brand-blue">
+              Book a consultation today and take the first step towards moving freely again.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-/** Specialists block: copy on the left, photo on the right with a solid experience badge. */
+/** Specialists block: copy on the left, photo on the right. */
 export function Specialists() {
   return (
-    <section aria-labelledby="specialists-heading" className="py-20 sm:py-28">
-      <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
-        <div className="lg:order-1">
+    <section aria-labelledby="specialists-heading" className="pt-8 pb-20 sm:pt-12 sm:pb-28">
+      <div className="container-x grid gap-14 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-stretch lg:gap-20">
+        <div className="flex flex-col justify-center lg:order-1 lg:py-4">
           <p className="eyebrow">Our team</p>
-          <h2 id="specialists-heading" className="mt-3 text-4xl leading-tight font-bold tracking-tight sm:text-5xl">
+          <h2
+            id="specialists-heading"
+            className="mt-3 text-4xl leading-[1.1] font-bold tracking-tight text-balance sm:text-[50px]"
+          >
             Our specialists
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-brand-ink/85">
-            Our long-established practice was purchased by Marcus Hood, a seasoned physiotherapist who built this clinic
-            through his expertise in rehabilitation and private practice during his stay in America. He has added a
-            highly qualified team of senior physiotherapists with 80 years of combined experience who share his passion
-            for healing.
-          </p>
-          <p className="mt-5 leading-relaxed">
-            This team is trained to treat a wide range of conditions in the Ferny Hill community and surrounding area.
-            During the course of your treatment, you will work with one of these specialists to develop a personalised
-            plan for you whilst we assist you in working toward your goal.
-          </p>
-          <p className="mt-5 leading-relaxed">
-            Once your initial complaint is treated and pain is manageable again, we provide the tools necessary to
-            maintain your healthy condition and prevent future issues.
-          </p>
+          <span aria-hidden className="mt-6 block h-1 w-14 rounded-full bg-brand-cyan" />
+
+          <div className="mt-7 max-w-xl space-y-5 text-lg leading-[1.8] text-brand-body">
+            <p className="text-lg leading-relaxed font-medium text-brand-ink">
+              Our long-established practice was purchased by Marcus Hood, a seasoned physiotherapist who built this
+              clinic through his expertise in rehabilitation and private practice during his stay in America. He has
+              added a highly qualified team of senior physiotherapists with 80 years of combined experience who share
+              his passion for healing.
+            </p>
+            <p>
+              This team is trained to treat a wide range of conditions in the Ferny Hill community and surrounding area.
+              During the course of your treatment, you will work with one of these specialists to develop a
+              personalised plan for you whilst we assist you in working toward your goal.
+            </p>
+            <p>
+              Once your initial complaint is treated and pain is manageable again, we provide the tools necessary to
+              maintain your healthy condition and prevent future issues.
+            </p>
+          </div>
         </div>
 
         <div className="relative mx-auto w-full max-w-lg lg:order-2 lg:max-w-none">
-          <div className="relative aspect-[5/6] overflow-hidden rounded-3xl shadow-card">
+          <div className="relative aspect-[5/6] overflow-hidden rounded-3xl shadow-card lg:aspect-auto lg:h-full lg:min-h-[32rem]">
             <Image
-              src="/images/clinic-6.jpg"
-              alt="A physiotherapist assessing a patient's knee and hip movement"
+              src="/images/specialists.jpg"
+              alt="A physiotherapist guiding a patient through a shoulder stretch"
               fill
               sizes="(min-width:1024px) 45vw, 100vw"
-              className="object-cover object-[40%_50%]"
+              className="object-cover object-[50%_30%]"
             />
-          </div>
-          <div className="absolute -bottom-6 left-4 rounded-2xl bg-brand-blue px-6 py-5 text-white shadow-xl shadow-brand-blue/30 sm:-left-8 sm:py-6">
-            <p className="text-5xl leading-none font-bold tracking-tight">80</p>
-            <p className="mt-2 max-w-[9rem] text-sm leading-snug text-white/85">years of combined experience</p>
           </div>
         </div>
       </div>
@@ -105,7 +111,7 @@ export function Specialists() {
 /** Deep-blue call to action with decorative orbit rings. */
 export function ContactCta() {
   return (
-    <section aria-labelledby="cta-heading" className="container-x pb-20 sm:pb-28">
+    <section aria-labelledby="cta-heading" className="container-x pb-12 sm:pb-16">
       <div className="relative isolate overflow-hidden rounded-[2rem] bg-brand-blue px-6 py-14 text-white sm:px-12 sm:py-16 lg:px-16 lg:py-20">
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute -top-40 -right-32 size-[30rem] rounded-full border border-white/10" />
@@ -134,9 +140,9 @@ export function ContactCta() {
 
           <dl className="space-y-5 rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-md sm:p-8">
             <div className="flex gap-4">
-              <Phone className="mt-1 size-5 shrink-0 text-white/70" aria-hidden />
+              <Phone className="mt-1 size-5 shrink-0 text-white/90" aria-hidden />
               <div>
-                <dt className="text-sm text-white/70">Call us</dt>
+                <dt className="text-sm text-white/90">Call us</dt>
                 <dd className="mt-0.5 text-2xl font-bold">
                   <a href={site.phoneHref} className="underline decoration-white/30 underline-offset-4 hover:decoration-white">
                     {site.phone}
@@ -145,17 +151,17 @@ export function ContactCta() {
               </div>
             </div>
             <div className="flex gap-4 border-t border-white/15 pt-5">
-              <Clock className="mt-1 size-5 shrink-0 text-white/70" aria-hidden />
+              <Clock className="mt-1 size-5 shrink-0 text-white/90" aria-hidden />
               <div>
-                <dt className="text-sm text-white/70">Hours</dt>
-                <dd className="mt-0.5 font-semibold">{keepTogether(site.hours)}</dd>
+                <dt className="text-sm text-white/90">Hours</dt>
+                <dd className="mt-0.5 text-lg font-semibold">{keepTogether(site.hours)}</dd>
               </div>
             </div>
             <div className="flex gap-4 border-t border-white/15 pt-5">
-              <MapPin className="mt-1 size-5 shrink-0 text-white/70" aria-hidden />
+              <MapPin className="mt-1 size-5 shrink-0 text-white/90" aria-hidden />
               <div>
-                <dt className="text-sm text-white/70">Visit</dt>
-                <dd className="mt-0.5 font-semibold">{site.address}</dd>
+                <dt className="text-sm text-white/90">Visit</dt>
+                <dd className="mt-0.5 text-lg font-semibold">{site.address}</dd>
               </div>
             </div>
           </dl>
@@ -171,36 +177,31 @@ export function ServiceAreas() {
   const areas = serviceAreas.filter((a, i, all) => all.findIndex((b) => b.href === a.href) === i);
 
   return (
-    <section aria-label="Service areas" className="pb-20 sm:pb-28">
-      <div className="container-x">
-        <details className="group rounded-2xl border border-slate-200/80 bg-white shadow-card open:shadow-card-hover">
-          <summary className="flex cursor-pointer items-center justify-between gap-4 rounded-2xl px-6 py-5 sm:px-8">
-            <span className="flex items-center gap-3">
-              <span className="flex size-10 items-center justify-center rounded-xl bg-brand-pale text-brand-cyan">
-                <MapPin className="size-5" aria-hidden />
-              </span>
-              <span className="text-lg font-bold text-brand-ink">Areas We Service</span>
-            </span>
-            <ChevronDown
-              className="size-5 text-brand-blue transition-transform duration-300 group-open:rotate-180"
-              aria-hidden
-            />
-          </summary>
-          <ul className="grid grid-cols-2 gap-x-6 gap-y-1 border-t border-slate-100 px-6 py-6 sm:grid-cols-3 sm:px-8 lg:grid-cols-5">
-            {areas.map((area) => (
-              <li key={area.href}>
-                <a
-                  href={area.href}
-                  className="flex items-center gap-2 rounded-lg py-1.5 text-[0.95rem] transition hover:text-brand-blue"
-                >
-                  <span aria-hidden className="size-1.5 shrink-0 rounded-full bg-brand-teal" />
-                  <span className="sr-only">Physiotherapist in </span>
-                  {area.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </details>
+    <section aria-labelledby="areas-heading" className="border-t border-slate-100 pt-12 pb-20 sm:pt-14 sm:pb-24">
+      <div className="container-x text-center">
+        <h2 id="areas-heading" className="text-3xl font-bold tracking-tight text-brand-ink sm:text-4xl">
+          Areas We Service
+        </h2>
+        <p className="mt-3 text-xs font-semibold tracking-[0.2em] text-brand-cyan uppercase sm:text-sm">Physiotherapy</p>
+
+        <ul className="reveal-group mx-auto mt-10 flex max-w-6xl flex-wrap justify-center gap-2.5 sm:gap-3">
+          {areas.map((area) => (
+            <li key={area.href}>
+              <a
+                href={area.href}
+                className="group inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-[0.95rem] text-brand-ink transition hover:border-brand-cyan hover:text-brand-blue"
+              >
+                <MapPin className="size-4 shrink-0 text-brand-cyan" aria-hidden />
+                <span className="sr-only">Physiotherapist in </span>
+                {area.name}
+                <ArrowRight
+                  className="size-4 shrink-0 transition-transform group-hover:translate-x-0.5"
+                  aria-hidden
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

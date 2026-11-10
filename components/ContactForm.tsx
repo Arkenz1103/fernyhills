@@ -69,7 +69,7 @@ export default function ContactForm() {
         Send Message
       </button>
       {sent && (
-        <p role="status" className="text-sm text-slate-500">
+        <p role="status" className="text-sm text-slate-700">
           Your email app should open with your message ready to send to {site.email}.
         </p>
       )}

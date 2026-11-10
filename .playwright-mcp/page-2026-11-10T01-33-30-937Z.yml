@@ -1,0 +1,201 @@
+- generic [active] [ref=f22e1]:
+  - link "Skip to main content" [ref=f22e2] [cursor=pointer]:
+    - /url: "#bde-main"
+  - generic [ref=f22e6]:
+    - paragraph [ref=f22e8]:
+      - text: "Phone:"
+      - link "07 3351 5177" [ref=f22e10] [cursor=pointer]:
+        - /url: tel:07 3351 5177
+    - paragraph [ref=f22e12]:
+      - text: "Email:"
+      - link "info@fernyhillsphysiotherapy.com.au" [ref=f22e14] [cursor=pointer]:
+        - /url: mailto:info@fernyhillsphysiotherapy.com.au
+    - link "Book Online" [ref=f22e16] [cursor=pointer]:
+      - /url: http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==
+  - generic [ref=f22e20]:
+    - link [ref=f22e22] [cursor=pointer]:
+      - /url: https://fernyhillsphysiotherapy.com.au/
+    - navigation [ref=f22e26]:
+      - list [ref=f22e27]:
+        - listitem [ref=f22e28]:
+          - link "Home" [ref=f22e29] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/
+        - listitem [ref=f22e30]:
+          - link "Services" [ref=f22e31] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/services/
+        - listitem [ref=f22e32]:
+          - link "Arthritis Treatment" [ref=f22e33] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/arthritis-treatment/
+        - listitem [ref=f22e34]:
+          - link "Sports Physio Rehabilitation" [ref=f22e35] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/sports-physio-rehabilitation/
+        - listitem [ref=f22e36]:
+          - link "Back Pain" [ref=f22e37] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/back-pain/
+        - listitem [ref=f22e38]:
+          - link "Hydrotherapy" [ref=f22e39] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/hydrotherapy/
+        - listitem [ref=f22e40]:
+          - link "Contact" [ref=f22e41] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/contact-us/
+  - main [ref=f22e42]:
+    - generic [ref=f22e45]:
+      - heading "Reduce sudden or long-lasting pain" [level=2] [ref=f22e46]
+      - generic [ref=f22e47]: Hydrotherapy in Ferny Hills
+    - generic [ref=f22e51]:
+      - heading "What is Hydrotherapy?" [level=2] [ref=f22e52]
+      - generic [ref=f22e53]: Hydrotherapy, also called “water cure,” is a low-impact way of treating pain and maintaining overall health in a natural, non-invasive way. It has shown to be one of the safest treatment methods for back pain and arthritis. We also use it in aiding muscle pain, nerve problems and relaxation.
+      - link "More information" [ref=f22e55] [cursor=pointer]:
+        - /url: https://fernyhillsphysiotherapy.com.au/contact-us/
+    - generic [ref=f22e61]:
+      - heading "We are always prompt, professional and friendly" [level=2] [ref=f22e62]
+      - link "Contact us" [ref=f22e64] [cursor=pointer]:
+        - /url: https://fernyhillsphysiotherapy.com.au/contact-us/
+    - generic [ref=f22e71]:
+      - heading "How it works" [level=2] [ref=f22e72]
+      - generic [ref=f22e73]: We use hydrotherapy to make your treatment relaxing and even enjoyable. The warm water is both soothing and pleasant while it increases circulation and causes the muscles to loosen, allowing for easier exercise.Research suggests that hydrotherapy reduces injury by stimulating circulation and reducing swelling. It is also particularly useful in taking the weight off of a sore joint and providing resistance by utilising the physical properties of water. Hydrotherapy is often confused with aqua aerobics, which is generally a strenuous exercise. Quite to the contrary, hydrotherapy focuses on slow and controlled movements that lead to relaxation. At the same time, pushing against the water helps improve muscle strength. Studies have shown that hydrotherapy can improve general fitness in those with arthritis.
+      - link "Let's talk" [ref=f22e75] [cursor=pointer]:
+        - /url: https://fernyhillsphysiotherapy.com.au/contact-us/
+    - generic [ref=f22e80]:
+      - heading "Start Hydrotherapy" [level=2] [ref=f22e81]
+      - generic [ref=f22e82]: Our hydrotherapy sessions can be tailored to your individual needs. You can begin slowly and gradually build up your strength and flexibility as you increase resistance. If you can’t swim, don’t worry. Our staff will always be present to assist you and help you exercise in the right depth for you. Call us today to see if hydrotherapy is right for you.
+      - link "Call us today" [ref=f22e84] [cursor=pointer]:
+        - /url: https://fernyhillsphysiotherapy.com.au/contact-us/
+  - generic [ref=f22e87]:
+    - heading "Areas We Service" [level=2] [ref=f22e88]
+    - generic [ref=f22e90]:
+      - heading [level=2] [ref=f22e91]:
+        - button "Physiotherapy" [expanded] [ref=f22e92] [cursor=pointer]
+      - region "Physiotherapy" [ref=f22e95]:
+        - generic [ref=f22e99]:
+          - link "Everton Hills →" [ref=f22e100] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-hills/
+            - text: Everton Hills
+            - generic [ref=f22e101]: →
+          - link "Samford →" [ref=f22e102] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-stafford/
+            - text: Samford
+            - generic [ref=f22e103]: →
+          - link "Everton Park →" [ref=f22e104] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-park/
+            - text: Everton Park
+            - generic [ref=f22e105]: →
+          - link "Stafford →" [ref=f22e106] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-stafford/
+            - text: Stafford
+            - generic [ref=f22e107]: →
+          - link "Samford →" [ref=f22e108] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-samford/
+            - text: Samford
+            - generic [ref=f22e109]: →
+          - link "Arana Hills →" [ref=f22e110] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-arana-hills/
+            - text: Arana Hills
+            - generic [ref=f22e111]: →
+          - link "Bunya →" [ref=f22e112] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-bunya/
+            - text: Bunya
+            - generic [ref=f22e113]: →
+          - link "Ferny Grove →" [ref=f22e114] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-ferny-grove/
+            - text: Ferny Grove
+            - generic [ref=f22e115]: →
+          - link "Keperra →" [ref=f22e116] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-keperra/
+            - text: Keperra
+            - generic [ref=f22e117]: →
+          - link "Alderley →" [ref=f22e118] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-alderley/
+            - text: Alderley
+            - generic [ref=f22e119]: →
+          - link "Everton Park →" [ref=f22e120] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-park/
+            - text: Everton Park
+            - generic [ref=f22e121]: →
+          - link "Everton Hills →" [ref=f22e122] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-hills/
+            - text: Everton Hills
+            - generic [ref=f22e123]: →
+          - link "Albany Creek →" [ref=f22e124] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-albany-creek/
+            - text: Albany Creek
+            - generic [ref=f22e125]: →
+          - link "McDowall →" [ref=f22e126] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-mcdowall/
+            - text: McDowall
+            - generic [ref=f22e127]: →
+          - link "Draper →" [ref=f22e128] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-draper/
+            - text: Draper
+            - generic [ref=f22e129]: →
+          - link "The Gap →" [ref=f22e130] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-the-gap/
+            - text: The Gap
+            - generic [ref=f22e131]: →
+          - link "Mitchelton →" [ref=f22e132] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-mitchelton/
+            - text: Mitchelton
+            - generic [ref=f22e133]: →
+          - link "Stafford Heights →" [ref=f22e134] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-stafford-heights/
+            - text: Stafford Heights
+            - generic [ref=f22e135]: →
+          - link "Upper Kedron →" [ref=f22e136] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-upper-kedron/
+            - text: Upper Kedron
+            - generic [ref=f22e137]: →
+          - link "Enoggera →" [ref=f22e138] [cursor=pointer]:
+            - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-enoggera/
+            - text: Enoggera
+            - generic [ref=f22e139]: →
+    - generic:
+      - heading [level=3]
+  - generic [ref=f22e142]:
+    - generic [ref=f22e143]:
+      - generic [ref=f22e145]: Ferny Hills Physiotherapy is a physiotherapy clinic located at 170 Patricks Road, Ferny Hills QLD, Australia, offering services such as sports rehabilitation, arthritis treatment, back pain management, and hydrotherapy.
+      - generic [ref=f22e146]:
+        - link [ref=f22e147] [cursor=pointer]:
+          - /url: https://www.yellowpages.com.au/qld/ferny-hills/ferny-hills-physiotherapy-12076332-listing.html?referredBy=www.yellowpages.com.au&context=businessNameSearch
+        - link:
+          - /url: "#"
+        - generic [ref=f22e149]:
+          - link:
+            - /url: "#"
+          - link [ref=f22e150] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=f22e153]:
+      - heading "Quick Links" [level=3] [ref=f22e154]
+      - generic [ref=f22e155]:
+        - link "Home" [ref=f22e156] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/
+        - link "Services" [ref=f22e157] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/services/
+        - link "Arthritis Treatment" [ref=f22e158] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/arthritis-treatment/
+        - link "Sports Physio Rehabilitation" [ref=f22e159] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/sports-physio-rehabilitation/
+        - link "Back Pain" [ref=f22e160] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/back-pain/
+        - link "Hydrotherapy" [ref=f22e161] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/hydrotherapy/
+        - link "Contact" [ref=f22e162] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/contact-us/
+    - generic [ref=f22e164]:
+      - generic [ref=f22e166]:
+        - generic [ref=f22e167]: "Phone:"
+        - link "07 3351 5177" [ref=f22e170] [cursor=pointer]:
+          - /url: tel:07 3351 5177
+      - generic [ref=f22e173]:
+        - generic [ref=f22e174]: "Address:"
+        - generic [ref=f22e175]: 170 Patricks Road Ferny Hills QLD 4055
+      - generic [ref=f22e179]:
+        - generic [ref=f22e180]: "Email:"
+        - link "info@fernyhillsphysiotherapy.com.au" [ref=f22e184] [cursor=pointer]:
+          - /url: mailto:info@fernyhillsphysiotherapy.com.au
+  - paragraph [ref=f22e189]:
+    - text: Copyright © 2026 Ferny Hills Physiotherapy |
+    - link "Privacy Policy" [ref=f22e190] [cursor=pointer]:
+      - /url: https://fernyhillsphysiotherapy.com.au/privacy-policy/
+    - text: "| Website design and hosting by"
+    - link "WaynAI" [ref=f22e191] [cursor=pointer]:
+      - /url: https://waynai.com.au/

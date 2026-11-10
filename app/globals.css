@@ -8,7 +8,7 @@
   --color-brand-teal: #3b9ab2; /* Teal */
   --color-brand-cyan: #168bb4; /* Cyan */
   --color-brand-teal-bright: #168bb4; /* Alias of cyan, used by inner pages */
-  --color-brand-body: #617280; /* Body text */
+  --color-brand-body: #2b3a47; /* Body text: dark slate for easy reading */
   --color-brand-light: #f1f7f8; /* Pale background */
   --color-brand-pale: #f1f7f8;
   --color-brand-ink: #0b2a42; /* Headings */
@@ -19,7 +19,6 @@
 
   --shadow-card: 0 1px 2px rgb(12 83 132 / 0.06), 0 10px 30px -12px rgb(12 83 132 / 0.18);
   --shadow-card-hover: 0 2px 6px rgb(12 83 132 / 0.08), 0 28px 48px -18px rgb(12 83 132 / 0.34);
-  --shadow-glass: 0 8px 32px -8px rgb(15 76 129 / 0.22);
 }
 
 /* ---------- Base ---------- */
@@ -36,6 +35,11 @@
 
   body {
     @apply bg-white font-sans text-brand-body antialiased;
+  }
+
+  /* Description text is 18px site-wide; headings, labels and buttons set their own sizes. */
+  p {
+    @apply text-lg;
   }
 
   h1,
@@ -82,11 +86,6 @@
   }
 }
 
-/* Frosted glass surface */
-@utility glass {
-  @apply border border-white/60 bg-white/70 shadow-glass backdrop-blur-md;
-}
-
 /* Cards that lift on hover */
 @utility lift {
   @apply transition duration-300 ease-out hover:shadow-card-hover motion-safe:hover:-translate-y-1.5;
@@ -113,4 +112,132 @@
 @utility dot-grid {
   background-image: radial-gradient(circle, rgb(59 154 178 / 0.35) 1.5px, transparent 1.6px);
   background-size: 18px 18px;
+}
+
+/* ------------------------------------------------------------------
+   Motion
+   - Page banners (.hero) play a short staggered entrance on load.
+   - Everything else fades/slides in as it scrolls into view, using
+     CSS scroll-driven animations (no JS). Browsers without support
+     simply show the content as normal.
+   - Keyframes animate `transform`, which composes with Tailwind v4's
+     separate `translate`/`scale` properties, so hover effects still work.
+   - Nothing moves for visitors who prefer reduced motion.
+------------------------------------------------------------------- */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes settle-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes draw-x {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Banner entrance on page load: short, soft rises with a tight stagger */
+  .hero-enter > * {
+    animation: hero-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-enter > :nth-child(2) {
+    animation-delay: 0.08s;
+  }
+  .hero-enter > :nth-child(3) {
+    animation-delay: 0.16s;
+  }
+  .hero-enter > :nth-child(4) {
+    animation-delay: 0.24s;
+  }
+  .hero-enter > :nth-child(5) {
+    animation-delay: 0.32s;
+  }
+  /* The accent line before the eyebrow draws itself in */
+  .hero-accent {
+    transform-origin: left center;
+    animation: draw-x 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+  }
+  /* Photo: gentle fade with a slow, subtle settle */
+  .hero-media {
+    animation:
+      fade-in 1s ease-out both,
+      hero-zoom 2.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  /* Scroll reveal for every section below the banner */
+  @supports (animation-timeline: view()) {
+    main section:not(.hero) :is(.container-x > *, li),
+    main section.container-x:not(.hero) > * {
+      animation: fade-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 22%;
+    }
+
+    /* Stagger items that sit side by side in a row */
+    main section:not(.hero) li:nth-child(3n + 2) {
+      animation-range: entry 5% cover 26%;
+    }
+    main section:not(.hero) li:nth-child(3n) {
+      animation-range: entry 10% cover 30%;
+    }
+
+    /* Lists of small items (e.g. suburb buttons) arrive together as one block */
+    main section:not(.hero) .reveal-group > li {
+      animation: none;
+    }
+
+    /* Photos ease from a slight zoom as they arrive */
+    main section:not(.hero) img:not(.object-contain) {
+      animation: settle-zoom linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 45%;
+    }
+  }
 }
