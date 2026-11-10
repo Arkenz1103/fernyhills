@@ -36,7 +36,7 @@ export default function ContactForm() {
   const label = "text-sm font-semibold text-brand-ink";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="flex h-full flex-col gap-5">
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block">
           <span className={label}>
@@ -55,15 +55,16 @@ export default function ContactForm() {
         <span className={label}>Phone Number</span>
         <input name="phone" type="tel" autoComplete="tel" className={field} />
       </label>
-      <label className="block">
+      {/* The message box grows to fill the card, so the card can line up with the column beside it */}
+      <label className="flex flex-1 flex-col">
         <span className={label}>
           Message <span className="text-brand-teal-bright">*</span>
         </span>
-        <textarea name="message" required rows={5} className={field} />
+        <textarea name="message" required rows={5} className={`${field} min-h-36 flex-1 resize-none`} />
       </label>
       <button
         type="submit"
-        className="btn btn-primary w-full sm:w-auto"
+        className="btn btn-primary w-full sm:w-auto sm:self-end"
       >
         <Send className="h-4 w-4" aria-hidden />
         Send Message

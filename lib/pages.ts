@@ -19,6 +19,10 @@ export type Block =
   | { type: "banner"; heading: string; cta: Cta; image: string }
   /** line: small scroll-drawn hairline transition between two sections */
   | { type: "line" }
+  /** spine: scroll transition where a row of vertebrae settles into a straight line */
+  | { type: "spine" }
+  /** wave: scroll transition where soft water waves roll sideways and rise like a filling pool */
+  | { type: "wave" }
   | { type: "cta"; heading: string; paragraphs: string[]; cta: Cta }
   | {
       type: "conditions";
@@ -335,6 +339,7 @@ export const backPain: PageContent = {
     eyebrow: "Back Pain Management at Ferny Hills Physiotherapy Centre",
     title: "Our specialists want to help relieve your back pain",
     image: "/images/pages/back-pain-hero.webp",
+    imagePosition: "0% 45%",
   },
   blocks: [
     {
@@ -346,12 +351,7 @@ export const backPain: PageContent = {
       cta: contact("Learn more"),
       image: "/images/pages/back-pain-listen.jpg",
     },
-    {
-      type: "banner",
-      heading: "We have 80 years of combined experience",
-      cta: contact("Contact us"),
-      image: "/images/services/equipment-banner.webp",
-    },
+    { type: "spine" },
     {
       type: "split",
       eyebrow: "Prevent injuries",
@@ -380,6 +380,7 @@ export const hydrotherapy: PageContent = {
     eyebrow: "Hydrotherapy in Ferny Hills",
     title: "Reduce sudden or lasting pain",
     image: "/images/pages/hydro-hero.webp",
+    imagePosition: "50% 42%",
   },
   blocks: [
     {
@@ -391,12 +392,7 @@ export const hydrotherapy: PageContent = {
       cta: contact("More information"),
       image: "/images/pages/hydro-what.jpg",
     },
-    {
-      type: "banner",
-      heading: "We are always prompt, professional and friendly",
-      cta: contact("Contact us"),
-      image: "/images/services/equipment-banner.webp",
-    },
+    { type: "wave" },
     {
       type: "split",
       heading: "How it works",

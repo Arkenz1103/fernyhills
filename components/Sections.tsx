@@ -5,6 +5,8 @@ import TreatmentJourney from "@/components/TreatmentJourney";
 import ConditionsCarousel from "@/components/ConditionsCarousel";
 import JointExplorer from "@/components/JointExplorer";
 import LineTransition from "@/components/LineTransition";
+import SpineTransition from "@/components/SpineTransition";
+import WaveTransition from "@/components/WaveTransition";
 import type { Block, Cta } from "@/lib/pages";
 import { site, serviceAreas } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -100,13 +102,26 @@ export function CtaSection({ heading, paragraphs, cta }: { heading: string; para
   );
 }
 
+/** Transitions that sit snugly between two sections */
+const tight = (b?: Block) => b?.type === "spine" || b?.type === "wave";
+
 export function PageBlocks({ blocks }: { blocks: Block[] }) {
   return (
     <>
       {blocks.map((block, i) => {
         switch (block.type) {
           case "split":
-            return <SplitSection key={i} {...block} />;
+            return (
+              <SplitSection
+                key={i}
+                {...block}
+                // Pull the sections either side of a spine or wave transition in close to it
+                className={cn(
+                  tight(blocks[i - 1]) && "pt-6 sm:pt-8",
+                  tight(blocks[i + 1]) && "pb-6 sm:pb-8",
+                )}
+              />
+            );
           case "banner":
             return <BannerSection key={i} {...block} />;
           case "cta":
@@ -119,6 +134,10 @@ export function PageBlocks({ blocks }: { blocks: Block[] }) {
             return <JointExplorer key={i} {...block} />;
           case "line":
             return <LineTransition key={i} />;
+          case "spine":
+            return <SpineTransition key={i} />;
+          case "wave":
+            return <WaveTransition key={i} />;
         }
       })}
     </>
