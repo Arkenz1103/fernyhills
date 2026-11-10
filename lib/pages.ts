@@ -1,0 +1,293 @@
+/**
+ * Inner-page content, reproduced verbatim from the live site.
+ * Layout is described as a list of blocks rendered by <PageBlocks />.
+ */
+
+export type CtaKind = "contact" | "call" | "book";
+export type Cta = { label: string; kind: CtaKind };
+
+export type Block =
+  | {
+      type: "split";
+      eyebrow?: string;
+      heading?: string;
+      paragraphs: string[];
+      cta?: Cta;
+      image: string;
+      reverse?: boolean;
+    }
+  | { type: "banner"; heading: string; cta: Cta; image: string }
+  | { type: "cta"; heading: string; paragraphs: string[]; cta: Cta }
+  | {
+      type: "conditions";
+      heading: string;
+      intro: string;
+      items: { title: string; image: string }[];
+    };
+
+export type PageContent = {
+  slug: string;
+  title: string;
+  hero: { eyebrow: string; title: string; image: string; cta?: Cta };
+  blocks: Block[];
+};
+
+const contact = (label: string): Cta => ({ label, kind: "contact" });
+const call = (label: string): Cta => ({ label, kind: "call" });
+
+export const services: PageContent = {
+  slug: "services",
+  title: "Services",
+  hero: {
+    eyebrow: "Women's Health Physiotherapist for Ferny Grove & Samford",
+    title: "We Ensure Lasting Rehabilitation",
+    image: "/images/clinic-3.jpg",
+  },
+  blocks: [
+    {
+      type: "split",
+      heading: "We Believe in Customised Care",
+      paragraphs: [
+        "At Ferny Hills Physiotherapy Centre, we don't see you as just another patient. We understand that your body and your circumstances are highly unique, which is why we provide distinctive treatment to each client that will most benefit the individual. We want your treatment experience to be positive and effective.",
+      ],
+      cta: contact("Let's talk"),
+      image: "/images/clinic-6.jpg",
+    },
+    {
+      type: "conditions",
+      heading: "How We Can Help",
+      intro: "We treat for the following conditions:",
+      items: [
+        { title: "Spinal Injuries", image: "/images/spinal.jpg" },
+        { title: "Neck and back pain", image: "/images/neck-back.jpg" },
+        { title: "Arthritis", image: "/images/arthritis.jpg" },
+        { title: "Upper and lower limb injuries and conditions", image: "/images/limb.jpg" },
+        { title: "Sporting injuries", image: "/images/sporting.jpg" },
+        { title: "Work injuries", image: "/images/work.jpg" },
+        { title: "Whiplash", image: "/images/whiplash.jpg" },
+        { title: "Chronic pain", image: "/images/clinic-4.jpg" },
+        { title: "Post-operative rehabilitation and more", image: "/images/clinic-5.jpg" },
+      ],
+    },
+    {
+      type: "split",
+      heading: "Our Personalised Treatment approach",
+      paragraphs: [
+        "Our treatment plan for you begins with a comprehensive assessment and physical exam to diagnose your condition. We then communicate with you and other health professionals to collaborate on a treatment and recovery plan to get you back on your feet. When we have determined your health goal, we will begin treatment which involves hands-on mobilisation and soft tissue techniques.",
+        "Once your initial complaint is treated, we will teach you to manage your pain and aid your recovery.",
+        "All of our treatment techniques are based on scientific research and clinical experience. We are always adapting to new treatment methods and advances in technology so you receive the most up-to-date care.",
+      ],
+      cta: contact("Let's talk"),
+      image: "/images/clinic-1.jpg",
+      reverse: true,
+    },
+    {
+      type: "banner",
+      heading: "We use state-of-the-art equipment for your care",
+      cta: contact("Contact us"),
+      image: "/images/clinic-2.jpg",
+    },
+    {
+      type: "split",
+      heading: "Specialised equipment",
+      paragraphs: [
+        "At Ferny Hills Physiotherapy, we use the best possible diagnostic and treatment equipment. This includes our Vibro Trainer for advanced muscle training and our Gaitscan™ biomechanical footprint scanner to identify abnormalities and prescribe custom orthotics. We also supply equipment that aids in rehabilitation and injury prevention such as supportive braces, therapeutic sandals and contoured pillows.",
+        "Our staff is happy to help you obtain these materials to promote your speedy recovery.",
+      ],
+      cta: contact("Let's talk"),
+      image: "/images/equipment.jpg",
+    },
+    {
+      type: "cta",
+      heading: "Contact us today",
+      paragraphs: [
+        "If you or someone you love is suffering from one of these debilitating ailments, stop by our clinic to find out how we can help.",
+      ],
+      cta: contact("Contact us"),
+    },
+  ],
+};
+
+export const arthritis: PageContent = {
+  slug: "arthritis-treatment",
+  title: "Arthritis Treatment",
+  hero: {
+    eyebrow: "Arthritis Treatment Available in Ferny Hills",
+    title: "Our friendly staff is here for you",
+    image: "/images/clinic-7.jpg",
+  },
+  blocks: [
+    {
+      type: "split",
+      heading: "Treatment to relieve your suffering",
+      paragraphs: [
+        "Do you struggle to climb the stairs in your own home because your joints are screaming at you in protest? You aren’t alone – there are over 100 different kinds of arthritis, and it afflicts all age groups. Commonly, it is accompanied by pain, swelling, stiffness and decreased range of motion in the joints. Worst of all, it can cause permanent changes in your joints.",
+        "We want to put an end to the pain causing the struggle in your every-day tasks.",
+      ],
+      cta: call("Call today"),
+      image: "/images/arthritis-2.jpg",
+    },
+    {
+      type: "banner",
+      heading: "We personalise treatments to suit your condition",
+      cta: contact("Contact us"),
+      image: "/images/clinic-7.jpg",
+    },
+    {
+      type: "split",
+      heading: "How we can help",
+      paragraphs: [
+        "A physiotherapist can get you moving again and that’s where we come in. We focus on strengthening your body to support your joints, getting them moving again and improving your overall ability to move. Our goal is to get you back to your daily activities without the suffering.",
+        "In order to get you to this point, we come up with an individualised exercise plan for you to increase your strength and flexibility. Our hope is that you will come away from your visits with an increased knowledge of how to perform exercises independently so you can do them even when we aren’t around.",
+        "In addition to these exercises, we may recommend using devices to assist you such as walkers, braces, orthotics, splints, and other such materials for easing your pain and making your day easier.",
+      ],
+      cta: contact("Let's talk"),
+      image: "/images/clinic-1.jpg",
+      reverse: true,
+    },
+    {
+      type: "cta",
+      heading: "Live better",
+      paragraphs: ["Stop living with arthritis pain. Give us a call and let us help you enjoy life again."],
+      cta: contact("Start healing today"),
+    },
+  ],
+};
+
+export const sports: PageContent = {
+  slug: "sports-physio-rehabilitation",
+  title: "Sports Physio Rehabilitation",
+  hero: {
+    eyebrow: "Serving Samford",
+    title: "Sports Injury Rehabilitation Services in Ferny Hills",
+    image: "/images/clinic-8.jpg",
+  },
+  blocks: [
+    {
+      type: "split",
+      heading: "Quality treatment",
+      paragraphs: [
+        "Sports injuries affect bones, muscles, tissues and cartilage and are detrimental to normal daily activities, not just athletic performance. They can happen to a professional athlete or a father playing ball with his children in the park. If your active lifestyle has been hindered by a sports injury, our physiotherapists have an extensive knowledge of the musculoskeletal system that will get you back to doing what you love.",
+      ],
+      cta: contact("Enquire now"),
+      image: "/images/sports.jpg",
+    },
+    {
+      type: "banner",
+      heading: "We were voted the best physio clinic around",
+      cta: contact("Contact us"),
+      image: "/images/clinic-8.jpg",
+    },
+    {
+      type: "split",
+      heading: "Prevent injuries",
+      paragraphs: [
+        "If you have been injured or you lead an active life where you are prone to injury, we recommend seeing a physiotherapist sooner rather than later. Waiting to be rehabilitated may end up worsening your injury. Sports injuries require supervision and time to heal safely.",
+        "Our staff can help you heal quickly, improve athletic performance and even prevent injuries before they even happen through a custom plan balancing stretching, exercise and rest.",
+      ],
+      cta: contact("Let's talk"),
+      image: "/images/sporting.jpg",
+      reverse: true,
+    },
+    {
+      type: "cta",
+      heading: "Start healing",
+      paragraphs: [
+        "Every injury is unique and everyone heals differently. Ferny Hills specialists will identify the cause for your specific injury, create a program and help you prevent injury in the future. But don’t wait until you’re injured – call us today so we can help optimise your sports performance and help you play safely.",
+      ],
+      cta: contact("Start healing today"),
+    },
+  ],
+};
+
+export const backPain: PageContent = {
+  slug: "back-pain",
+  title: "Back Pain",
+  hero: {
+    eyebrow: "Back Pain Management at Ferny Hills Physiotherapy Centre",
+    title: "Our specialists want to help relieve your back pain",
+    image: "/images/clinic-1.jpg",
+  },
+  blocks: [
+    {
+      type: "split",
+      heading: "Listen to this",
+      paragraphs: [
+        "Statistics indicate that 90% of people will experience back pain at least once in their life. Back pain can travel to other areas of the body and become progressively worse. Physiotherapy for back pain is a less risky alternative to surgery and is often equally as effective without the undesirable complications that accompany surgery.",
+      ],
+      cta: contact("Learn more"),
+      image: "/images/back-pain.jpg",
+    },
+    {
+      type: "banner",
+      heading: "We have 80 years of combined experience",
+      cta: contact("Contact us"),
+      image: "/images/clinic-1.jpg",
+    },
+    {
+      type: "split",
+      eyebrow: "Prevent injuries",
+      heading: "Treat the pain source",
+      paragraphs: [
+        "Ferny Hills Physiotherapy will perform an evaluation to determine the cause of your back pain. We will review your health history and ask questions about your symptoms to pinpoint any behaviours that may be contributing factors to your pain. We will decide upon a course of action and treat you with manual therapy, exercises and use of heat or ice to relieve pain.",
+        "We also teach you to maintain proper posture throughout the day and help you learn to listen to your body’s signals that your body mechanics are misaligned. This includes training for proper lifting, sitting, and bending and proper sleeping positions. We can prescribe you the long-term exercises we see fit for your condition and change them when necessary.",
+      ],
+      cta: contact("Let's talk"),
+      image: "/images/neck-back.jpg",
+      reverse: true,
+    },
+    {
+      type: "cta",
+      heading: "Get started",
+      paragraphs: ["See us today to get started with physiotherapy so that you can have a life without back pain."],
+      cta: call("Call us"),
+    },
+  ],
+};
+
+export const hydrotherapy: PageContent = {
+  slug: "hydrotherapy",
+  title: "Hydrotherapy",
+  hero: {
+    eyebrow: "Hydrotherapy in Ferny Hills",
+    title: "Reduce sudden or long-lasting pain",
+    image: "/images/hydro-2.jpg",
+  },
+  blocks: [
+    {
+      type: "split",
+      heading: "What is Hydrotherapy?",
+      paragraphs: [
+        "Hydrotherapy, also called “water cure,” is a low-impact way of treating pain and maintaining overall health in a natural, non-invasive way. It has shown to be one of the safest treatment methods for back pain and arthritis. We also use it in aiding muscle pain, nerve problems and relaxation.",
+      ],
+      cta: contact("More information"),
+      image: "/images/hydro-1.jpg",
+    },
+    {
+      type: "banner",
+      heading: "We are always prompt, professional and friendly",
+      cta: contact("Contact us"),
+      image: "/images/hydro-2.jpg",
+    },
+    {
+      type: "split",
+      heading: "How it works",
+      paragraphs: [
+        "We use hydrotherapy to make your treatment relaxing and even enjoyable. The warm water is both soothing and pleasant while it increases circulation and causes the muscles to loosen, allowing for easier exercise.",
+        "Research suggests that hydrotherapy reduces injury by stimulating circulation and reducing swelling. It is also particularly useful in taking the weight off of a sore joint and providing resistance by utilising the physical properties of water.",
+        "Hydrotherapy is often confused with aqua aerobics, which is generally a strenuous exercise. Quite to the contrary, hydrotherapy focuses on slow and controlled movements that lead to relaxation. At the same time, pushing against the water helps improve muscle strength. Studies have shown that hydrotherapy can improve general fitness in those with arthritis.",
+      ],
+      cta: contact("Let's talk"),
+      image: "/images/hydro-1.jpg",
+      reverse: true,
+    },
+    {
+      type: "cta",
+      heading: "Start Hydrotherapy",
+      paragraphs: [
+        "Our hydrotherapy sessions can be tailored to your individual needs. You can begin slowly and gradually build up your strength and flexibility as you increase resistance. If you can’t swim, don’t worry. Our staff will always be present to assist you and help you exercise in the right depth for you. Call us today to see if hydrotherapy is right for you.",
+      ],
+      cta: call("Call us today"),
+    },
+  ],
+};

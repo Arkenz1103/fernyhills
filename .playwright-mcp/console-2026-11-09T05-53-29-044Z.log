@@ -1,0 +1,324 @@
+[     285ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[     322ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[     516ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="services/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/services/" tree={[...]} params={{}} renderTree={{...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="services/p...">
+                  <SegmentTrieNode>
+                  <Page>
+                    <ContentPage>
+                      <section>
+                      <PageBlocks>
+                        ...
+                          <div className="relative">
+                            <div>
+                            <div className="relative a...">
+                              <img
+                                alt=""
+                                fetchPriority={undefined}
++                               loading="lazy"
+-                               loading="eager"
+                                width={undefined}
+                                height={undefined}
+                                decoding="async"
+                                data-nimg="fill"
+                                className="object-cover"
+                                style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                sizes="(min-width:1024px) 50vw, 100vw"
+                                srcSet={"/_next/image/?url=%2Fimages%2Fclinic-6.jpg&w=384&q=75 384w, /_next/image/?ur..."}
+                                src={"/_next/image/?url=%2Fimages%2Fclinic-6.jpg&w=3840&q=75"}
+                                ref={function}
+                                onLoad={function onLoad}
+                                onError={function onError}
+                              >
+                        ...
+                          <ul className="mt-12 grid...">
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Fspinal.jpg&w=32&q=75 32w, /_next/image/?url=..."}
+                                  src={"/_next/image/?url=%2Fimages%2Fspinal.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Fneck-back.jpg&w=32&q=75 32w, /_next/image/?u..."}
+                                  src={"/_next/image/?url=%2Fimages%2Fneck-back.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Farthritis.jpg&w=32&q=75 32w, /_next/image/?u..."}
+                                  src={"/_next/image/?url=%2Fimages%2Farthritis.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Flimb.jpg&w=32&q=75 32w, /_next/image/?url=%2..."}
+                                  src={"/_next/image/?url=%2Fimages%2Flimb.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Fsporting.jpg&w=32&q=75 32w, /_next/image/?ur..."}
+                                  src={"/_next/image/?url=%2Fimages%2Fsporting.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Fwork.jpg&w=32&q=75 32w, /_next/image/?url=%2..."}
+                                  src={"/_next/image/?url=%2Fimages%2Fwork.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Fwhiplash.jpg&w=32&q=75 32w, /_next/image/?ur..."}
+                                  src={"/_next/image/?url=%2Fimages%2Fwhiplash.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Fclinic-4.jpg&w=32&q=75 32w, /_next/image/?ur..."}
+                                  src={"/_next/image/?url=%2Fimages%2Fclinic-4.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                            <li className="group flex...">
+                              <div className="relative h...">
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="80px"
+                                  srcSet={"/_next/image/?url=%2Fimages%2Fclinic-5.jpg&w=32&q=75 32w, /_next/image/?ur..."}
+                                  src={"/_next/image/?url=%2Fimages%2Fclinic-5.jpg&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                              ...
+                        ...
+                          <div className="relative l...">
+                            <div>
+                            <div className="relative a...">
+                              <img
+                                alt=""
+                                fetchPriority={undefined}
++                               loading="lazy"
+-                               loading="eager"
+                                width={undefined}
+                                height={undefined}
+                                decoding="async"
+                                data-nimg="fill"
+                                className="object-cover"
+                                style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                sizes="(min-width:1024px) 50vw, 100vw"
+                                srcSet={"/_next/image/?url=%2Fimages%2Fclinic-1.jpg&w=384&q=75 384w, /_next/image/?ur..."}
+                                src={"/_next/image/?url=%2Fimages%2Fclinic-1.jpg&w=3840&q=75"}
+                                ref={function}
+                                onLoad={function onLoad}
+                                onError={function onError}
+                              >
+                        <BannerSection>
+                          <section className="container-...">
+                            <div className="relative i...">
+                              <img
+                                alt=""
+                                fetchPriority={undefined}
++                               loading="lazy"
+-                               loading="eager"
+                                width={undefined}
+                                height={undefined}
+                                decoding="async"
+                                data-nimg="fill"
+                                className="-z-20 object-cover"
+                                style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                sizes="100vw"
+                                srcSet={"/_next/image/?url=%2Fimages%2Fclinic-2.jpg&w=640&q=75 640w, /_next/image/?ur..."}
+                                src={"/_next/image/?url=%2Fimages%2Fclinic-2.jpg&w=3840&q=75"}
+                                ref={function}
+                                onLoad={function onLoad}
+                                onError={function onError}
+                              >
+                              ...
+                        ...
+                          <div className="relative">
+                            <div>
+                            <div className="relative a...">
+                              <img
+                                alt=""
+                                fetchPriority={undefined}
++                               loading="lazy"
+-                               loading="eager"
+                                width={undefined}
+                                height={undefined}
+                                decoding="async"
+                                data-nimg="fill"
+                                className="object-cover"
+                                style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                sizes="(min-width:1024px) 50vw, 100vw"
+                                srcSet={"/_next/image/?url=%2Fimages%2Fequipment.jpg&w=384&q=75 384w, /_next/image/?u..."}
+                                src={"/_next/image/?url=%2Fimages%2Fequipment.jpg&w=3840&q=75"}
+                                ref={function}
+                                onLoad={function onLoad}
+                                onError={function onError}
+                              >
+                        ...
+                      ...
+                ...
+              ...
+ @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:1036
+[   14798ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   14852ms] [LOG] [Fast Refresh] done in 44ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   15014ms] [LOG] [Fast Refresh] done in 44ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   15203ms] [LOG] [Fast Refresh] done in 44ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   15489ms] [LOG] [Fast Refresh] done in 44ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   15731ms] [LOG] [Fast Refresh] done in 44ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   15987ms] [LOG] [Fast Refresh] done in 44ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   98115ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[   98182ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[  398082ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[  398126ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[  404063ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760
+[  404100ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:760

@@ -1,0 +1,237 @@
+- generic [active] [ref=f28e1]:
+  - link "Skip to main content" [ref=f28e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f28e4]:
+    - list [ref=f28e5]:
+      - listitem [ref=f28e6]:
+        - link "07 3351 5177" [ref=f28e7] [cursor=pointer]:
+          - /url: tel:0733515177
+      - listitem [ref=f28e11]:
+        - link "info@fernyhillsphysiotherapy.com.au" [ref=f28e12] [cursor=pointer]:
+          - /url: mailto:info@fernyhillsphysiotherapy.com.au
+    - generic [ref=f28e16]:
+      - paragraph [ref=f28e17]: 170 Patricks Road Ferny Hills QLD 4055
+      - link "Book Online" [ref=f28e21] [cursor=pointer]:
+        - /url: http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==
+  - banner [ref=f28e25]:
+    - navigation "Main" [ref=f28e26]:
+      - link "Ferny Hills Physiotherapy – Home" [ref=f28e27] [cursor=pointer]:
+        - /url: /
+        - img "Ferny Hills Physiotherapy" [ref=f28e28]
+      - list [ref=f28e29]:
+        - listitem [ref=f28e30]:
+          - link "Home" [ref=f28e31] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f28e32]:
+          - link "Services" [ref=f28e33] [cursor=pointer]:
+            - /url: /services/
+        - listitem [ref=f28e34]:
+          - link "Arthritis Treatment" [ref=f28e35] [cursor=pointer]:
+            - /url: /arthritis-treatment/
+        - listitem [ref=f28e36]:
+          - link "Sports Physio Rehabilitation" [ref=f28e37] [cursor=pointer]:
+            - /url: /sports-physio-rehabilitation/
+        - listitem [ref=f28e38]:
+          - link "Back Pain" [ref=f28e39] [cursor=pointer]:
+            - /url: /back-pain/
+        - listitem [ref=f28e40]:
+          - link "Hydrotherapy" [ref=f28e41] [cursor=pointer]:
+            - /url: /hydrotherapy/
+        - listitem [ref=f28e42]:
+          - link "Contact" [ref=f28e43] [cursor=pointer]:
+            - /url: /contact-us/
+      - link "Book Online" [ref=f28e45] [cursor=pointer]:
+        - /url: http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==
+  - main [ref=f28e49]:
+    - region [ref=f28e50]:
+      - img "A physiotherapist assessing a patient's lower back" [ref=f28e52]
+      - generic [ref=f28e55]:
+        - paragraph [ref=f28e56]: Physiotherapist in Ferny Hills
+        - heading "80 years of dedicated care and treatment" [level=1] [ref=f28e58]
+        - paragraph [ref=f28e59]: Our goal is to teach you how to carry out your treatment in the future to maintain your overall wellness.
+        - generic [ref=f28e60]:
+          - link "Book Online" [ref=f28e61] [cursor=pointer]:
+            - /url: http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==
+          - link "Contact Us" [ref=f28e67] [cursor=pointer]:
+            - /url: /contact-us/
+        - paragraph [ref=f28e70]: Appts available now 7am – 6pm
+      - generic [ref=f28e78]:
+        - generic [ref=f28e79]: We Believe in Customised Care
+        - generic [ref=f28e80]: Our Personalised Treatment approach
+    - region "Why patients choose us" [ref=f28e81]:
+      - generic [ref=f28e83]:
+        - paragraph [ref=f28e89]:
+          - generic [ref=f28e90]: 80 years
+          - generic [ref=f28e91]: of combined experience
+        - paragraph [ref=f28e96]:
+          - generic [ref=f28e97]: Customised Care
+          - generic [ref=f28e98]: Our Personalised Treatment approach
+        - paragraph [ref=f28e105]:
+          - generic [ref=f28e106]: Senior Specialists
+          - generic [ref=f28e107]: Highly qualified physiotherapists
+        - generic [ref=f28e108]:
+          - heading "Health funds accepted" [level=2] [ref=f28e109]
+          - list [ref=f28e110]:
+            - listitem [ref=f28e111]:
+              - img "Bupa" [ref=f28e112]
+            - listitem [ref=f28e113]:
+              - img "Medibank" [ref=f28e114]
+            - listitem [ref=f28e115]:
+              - img "HCF" [ref=f28e116]
+            - listitem [ref=f28e117]:
+              - img "nib" [ref=f28e118]
+    - region [ref=f28e119]:
+      - generic [ref=f28e120]:
+        - generic [ref=f28e121]:
+          - generic [ref=f28e122]:
+            - paragraph [ref=f28e123]: Our services
+            - heading "How We Can Help" [level=2] [ref=f28e124]
+          - link "View all services" [ref=f28e125] [cursor=pointer]:
+            - /url: /services/
+        - list [ref=f28e128]:
+          - listitem [ref=f28e129]:
+            - link "A physiotherapist treating a patient's arthritic joint 01 Arthritis Treatment We want to put an end to the pain causing the struggle in your every-day tasks. Learn more" [ref=f28e130] [cursor=pointer]:
+              - /url: /arthritis-treatment/
+              - generic [ref=f28e131]:
+                - img "A physiotherapist treating a patient's arthritic joint" [ref=f28e132]
+                - generic [ref=f28e133]: "01"
+              - generic [ref=f28e134]:
+                - heading "Arthritis Treatment" [level=3] [ref=f28e138]
+                - paragraph [ref=f28e139]: We want to put an end to the pain causing the struggle in your every-day tasks.
+                - generic [ref=f28e140]: Learn more
+          - listitem [ref=f28e144]:
+            - link "An athlete working through a rehabilitation exercise 02 Sports Physio Rehabilitation Our staff can help you heal quickly, improve athletic performance and even prevent injuries before they even happen. Learn more" [ref=f28e145] [cursor=pointer]:
+              - /url: /sports-physio-rehabilitation/
+              - generic [ref=f28e146]:
+                - img "An athlete working through a rehabilitation exercise" [ref=f28e147]
+                - generic [ref=f28e148]: "02"
+              - generic [ref=f28e149]:
+                - heading "Sports Physio Rehabilitation" [level=3] [ref=f28e153]
+                - paragraph [ref=f28e154]: Our staff can help you heal quickly, improve athletic performance and even prevent injuries before they even happen.
+                - generic [ref=f28e155]: Learn more
+          - listitem [ref=f28e159]:
+            - link "A physiotherapist assessing a patient's lower back 03 Back Pain Physiotherapy for back pain is a less risky alternative to surgery and is often equally as effective. Learn more" [ref=f28e160] [cursor=pointer]:
+              - /url: /back-pain/
+              - generic [ref=f28e161]:
+                - img "A physiotherapist assessing a patient's lower back" [ref=f28e162]
+                - generic [ref=f28e163]: "03"
+              - generic [ref=f28e164]:
+                - heading "Back Pain" [level=3] [ref=f28e170]
+                - paragraph [ref=f28e171]: Physiotherapy for back pain is a less risky alternative to surgery and is often equally as effective.
+                - generic [ref=f28e172]: Learn more
+          - listitem [ref=f28e176]:
+            - link "A patient exercising in a hydrotherapy pool 04 Hydrotherapy Our hydrotherapy sessions can be tailored to your individual needs. Learn more" [ref=f28e177] [cursor=pointer]:
+              - /url: /hydrotherapy/
+              - generic [ref=f28e178]:
+                - img "A patient exercising in a hydrotherapy pool" [ref=f28e179]
+                - generic [ref=f28e180]: "04"
+              - generic [ref=f28e181]:
+                - heading "Hydrotherapy" [level=3] [ref=f28e187]
+                - paragraph [ref=f28e188]: Our hydrotherapy sessions can be tailored to your individual needs.
+                - generic [ref=f28e189]: Learn more
+    - region [ref=f28e193]:
+      - generic [ref=f28e194]:
+        - generic [ref=f28e195]:
+          - img "A physiotherapist assessing a patient's lower back posture" [ref=f28e198]
+          - paragraph [ref=f28e204]:
+            - generic [ref=f28e205]: State-of-the-art equipment
+            - text: Expert physiotherapists, one personalised plan
+        - generic [ref=f28e206]:
+          - paragraph [ref=f28e207]: About us
+          - heading "The best physio clinic in Ferny Hills" [level=2] [ref=f28e208]
+          - paragraph [ref=f28e209]: At Ferny Hills Physiotherapy Centre, we have gained an outstanding reputation as the best physio clinic in Ferny Hill. This is because we only use state-of-the-art equipment and have expert physiotherapists.
+          - paragraph [ref=f28e210]: At our centre, we work with you to help you understand your condition or injury. Together, we will identify your therapy needs, assess your pain and develop a treatment plan with you to restore full function to your body. Additionally, we will provide you with tools, professional advice and a supplemental plan to help you prevent further problems.
+          - paragraph [ref=f28e211]: Our goal is to teach you how to carry out your treatment in the future to maintain your overall wellness.
+    - region [ref=f28e212]:
+      - generic [ref=f28e213]:
+        - generic [ref=f28e214]:
+          - paragraph [ref=f28e215]: Our team
+          - heading "Our specialists" [level=2] [ref=f28e216]
+          - paragraph [ref=f28e217]: Our long-established practice was purchased by Marcus Hood, a seasoned physiotherapist who built this clinic through his expertise in rehabilitation and private practice during his stay in America. He has added a highly qualified team of senior physiotherapists with 80 years of combined experience who share his passion for healing.
+          - paragraph [ref=f28e218]: This team is trained to treat a wide range of conditions in the Ferny Hill community and surrounding area. During the course of your treatment, you will work with one of these specialists to develop a personalised plan for you whilst we assist you in working toward your goal.
+          - paragraph [ref=f28e219]: Once your initial complaint is treated and pain is manageable again, we provide the tools necessary to maintain your healthy condition and prevent future issues.
+        - generic [ref=f28e220]:
+          - img "A physiotherapist assessing a patient's knee and hip movement" [ref=f28e222]
+          - generic [ref=f28e223]:
+            - paragraph [ref=f28e224]: "80"
+            - paragraph [ref=f28e225]: years of combined experience
+    - region [ref=f28e226]:
+      - generic [ref=f28e228]:
+        - generic [ref=f28e229]:
+          - heading "Contact us today" [level=2] [ref=f28e230]
+          - paragraph [ref=f28e231]: Whatever you are suffering from—whether it be illness, injury, disability or simply the effects of ageing—we want to increase your mobility and help you achieve lasting results. To consult with an expert physiotherapist in Ferny Hills, call us today.
+          - link "Send a message" [ref=f28e233] [cursor=pointer]:
+            - /url: /contact-us/
+        - generic [ref=f28e237]:
+          - generic [ref=f28e241]:
+            - term [ref=f28e242]: Call us
+            - definition [ref=f28e243]:
+              - link "07 3351 5177" [ref=f28e244] [cursor=pointer]:
+                - /url: tel:0733515177
+          - generic [ref=f28e249]:
+            - term [ref=f28e250]: Hours
+            - definition [ref=f28e251]: Appts available now 7am – 6pm
+          - generic [ref=f28e256]:
+            - term [ref=f28e257]: Visit
+            - definition [ref=f28e258]: 170 Patricks Road Ferny Hills QLD 4055
+    - region "Service areas" [ref=f28e259]:
+      - group [ref=f28e261]:
+        - generic "Areas We Service" [ref=f28e262] [cursor=pointer]
+  - contentinfo [ref=f28e271]:
+    - generic [ref=f28e272]:
+      - generic [ref=f28e273]:
+        - link "Ferny Hills Physiotherapy – Home" [ref=f28e274] [cursor=pointer]:
+          - /url: /
+          - img "Ferny Hills Physiotherapy" [ref=f28e275]
+        - paragraph [ref=f28e276]: Ferny Hills Physiotherapy is a physiotherapy clinic located at 170 Patricks Road, Ferny Hills QLD, Australia, offering services such as sports rehabilitation, arthritis treatment, back pain management, and hydrotherapy.
+        - link [ref=f28e277] [cursor=pointer]:
+          - /url: https://www.yellowpages.com.au/qld/ferny-hills/ferny-hills-physiotherapy-12076332-listing.html
+          - img "Find us on Yellow Pages" [ref=f28e278]
+      - navigation [ref=f28e279]:
+        - heading "Quick Links" [level=2] [ref=f28e280]
+        - list [ref=f28e281]:
+          - listitem [ref=f28e282]:
+            - link "Home" [ref=f28e283] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f28e284]:
+            - link "Services" [ref=f28e285] [cursor=pointer]:
+              - /url: /services/
+          - listitem [ref=f28e286]:
+            - link "Arthritis Treatment" [ref=f28e287] [cursor=pointer]:
+              - /url: /arthritis-treatment/
+          - listitem [ref=f28e288]:
+            - link "Sports Physio Rehabilitation" [ref=f28e289] [cursor=pointer]:
+              - /url: /sports-physio-rehabilitation/
+          - listitem [ref=f28e290]:
+            - link "Back Pain" [ref=f28e291] [cursor=pointer]:
+              - /url: /back-pain/
+          - listitem [ref=f28e292]:
+            - link "Hydrotherapy" [ref=f28e293] [cursor=pointer]:
+              - /url: /hydrotherapy/
+          - listitem [ref=f28e294]:
+            - link "Contact" [ref=f28e295] [cursor=pointer]:
+              - /url: /contact-us/
+      - generic [ref=f28e296]:
+        - heading "Contact" [level=2] [ref=f28e297]
+        - list [ref=f28e298]:
+          - listitem [ref=f28e299]:
+            - link "07 3351 5177" [ref=f28e300] [cursor=pointer]:
+              - /url: tel:0733515177
+          - listitem [ref=f28e304]:
+            - link "info@fernyhillsphysiotherapy.com.au" [ref=f28e305] [cursor=pointer]:
+              - /url: mailto:info@fernyhillsphysiotherapy.com.au
+          - listitem [ref=f28e310]:
+            - generic [ref=f28e314]: 170 Patricks Road Ferny Hills QLD 4055
+      - generic [ref=f28e315]:
+        - heading "Hours" [level=2] [ref=f28e316]
+        - paragraph [ref=f28e317]:
+          - generic [ref=f28e321]: Appts available now 7am – 6pm
+    - generic [ref=f28e323]:
+      - paragraph [ref=f28e324]:
+        - text: Copyright © 2026 Ferny Hills Physiotherapy ·
+        - link "Privacy Policy" [ref=f28e325] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/privacy-policy/
+      - paragraph [ref=f28e326]:
+        - text: Website design and hosting by
+        - link "WaynAI" [ref=f28e327] [cursor=pointer]:
+          - /url: https://waynai.com.au/
