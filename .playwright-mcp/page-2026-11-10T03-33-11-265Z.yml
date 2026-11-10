@@ -1,0 +1,185 @@
+- generic [active] [ref=f10e1]:
+  - generic [aria-hidden] [ref=f10e2]: Consider · Digital
+  - link "Nominated on Awwwards" [ref=f10e4] [cursor=pointer]:
+    - /url: https://www.awwwards.com/sites/the-grid-to-the-page
+  - generic [ref=f10e10]:
+    - img [aria-hidden] [ref=f10e11]:
+      - generic [ref=f10e14]: alternating current · 50 Hz
+    - generic:
+      - paragraph: Consider Digital presents
+      - heading "From the grid to the page." [level=1]: From the gridto the page.
+      - paragraph: Every web page you have ever loaded was powered by a real power station, somewhere. This is the story of that journey — and of the carbon it quietly carries.
+      - paragraph: this page practises what it preaches —no images · no webfonts · no tracking · one small file
+    - generic [ref=f10e15]: scroll
+  - generic [ref=f10e17]:
+    - img [aria-hidden] [ref=f10e18]:
+      - generic [ref=f10e64]: wind
+      - generic [ref=f10e65]: solar
+      - generic [ref=f10e66]: nuclear
+      - generic [ref=f10e67]: gas
+    - generic:
+      - paragraph: 01 · Generation
+      - heading "It starts at the source." [level=2]
+      - paragraph: Britain's grid is cleaner than it has ever been — and in 2024, wind generated more electricity than gas for the first time. But every kilowatt-hour still carries a carbon cost, and that intensity changes hour by hour with demand, weather and the generation mix.
+      - 'img "GB electricity mix 2024, approximate: wind 30%, gas 26%, imports 14%, nuclear 14%, biomass 7%, solar 5%, hydro 2%"':
+        - generic:
+          - generic: wind
+          - generic: 30%
+        - generic:
+          - generic: gas
+          - generic: 26%
+        - generic:
+          - generic: imports
+          - generic: 14%
+        - generic:
+          - generic: nuclear
+          - generic: 14%
+        - generic:
+          - generic: biomass
+          - generic: 7%
+        - generic:
+          - generic: solar
+          - generic: 5%
+        - generic:
+          - generic: hydro
+          - generic: 2%
+      - paragraph: GB grid average, 2024 · ≈ 125 g CO₂ per kWhevery byte you ship spends some of it
+  - generic [ref=f10e69]:
+    - img [aria-hidden] [ref=f10e70]:
+      - generic [ref=f10e92]: 400 kV
+      - generic [ref=f10e93]: 132 kV
+      - generic [ref=f10e94]: 11 kV
+      - generic [ref=f10e95]: 230 V
+    - generic:
+      - paragraph: 02 · Transmission
+      - heading "400,000 volts, headed your way." [level=2]: 400,000 volts,headed your way.
+      - paragraph: From the turbine, electricity is stepped up and sent across the country on the transmission network, then stepped down, again and again, until it reaches a socket — and the router, mast and phone plugged into it.
+      - paragraph: ≈ 8% of the energy is lost as heatbefore it ever reaches a plug
+  - generic [ref=f10e97]:
+    - img [aria-hidden] [ref=f10e98]:
+      - generic [ref=f10e132]: you
+      - generic [ref=f10e133]: the network
+      - generic [ref=f10e134]: a data centre
+      - generic [ref=f10e135]: request · ~2 kB
+      - generic [ref=f10e136]: response · the whole page
+    - generic:
+      - paragraph: 03 · The request
+      - heading "You tap a link." [level=2]
+      - paragraph:
+        - text: In a few dozen milliseconds your request crosses the network to a data centre, and the page streams back — byte by byte, through machines that never sleep.
+        - strong: "Distance matters: the further your data travels, the more energy the journey takes."
+      - paragraph: where a page's energy is spent≈ ½ your device · ¼ the network · ¼ data centressustainable web design model, estimates
+  - generic [ref=f10e138]:
+    - img [aria-hidden] [ref=f10e139]:
+      - generic [ref=f10e140]: </>
+      - generic [ref=f10e144]: html — 33 kB
+      - generic [ref=f10e145]: "{;}"
+      - generic [ref=f10e149]: css — 80 kB
+      - generic [ref=f10e150]: Aa
+      - generic [ref=f10e154]: fonts — 140 kB
+      - generic [ref=f10e155]: ƒ()
+      - generic [ref=f10e159]: javascript — 680 kB
+      - generic [ref=f10e160]: ▲▲
+      - generic [ref=f10e164]: images — 1,030 kB
+      - generic [ref=f10e165]: ▶
+      - generic [ref=f10e169]: video & extras — the rest
+    - generic:
+      - paragraph: 04 · The page itself
+      - heading "What a page is made of." [level=2]
+      - paragraph:
+        - text: Pull the median web page apart and you find
+        - strong: ≈ 2.7 MB
+        - text: — most of it images and JavaScript, much of it never noticed by the person reading.
+      - paragraph: one view of a typical page≈ 0.5 g CO₂e · feels like nothing — keep scrolling
+  - generic [ref=f10e171]:
+    - generic [aria-hidden]:
+      - generic: "1"
+      - generic: page view
+      - generic: 0.5 g CO₂e
+    - generic:
+      - paragraph: a modest site, one year120,000 views ≈ 60 kg CO₂e — like driving 220 miles in a petrol car.at a million views a month, it's tonnes — and there are over a billion websites.multiply it out, and the web's little pages add up to a significant amount of carbon.
+  - generic [ref=f10e894]:
+    - img [aria-hidden] [ref=f10e895]:
+      - generic [ref=f10e911]: 60 W
+      - generic [ref=f10e912]: 8 W · same light
+    - generic:
+      - paragraph: 06 · An analogy
+      - heading "Remember the lightbulb?" [level=2]
+      - paragraph:
+        - text: Swap one bulb for an LED and the grid never notices. Swap
+        - strong: every bulb in the country
+        - text: and it adds up to a significant change.
+      - paragraph:
+        - text: Web pages work on exactly the same maths. One page is grams. The web is megatonnes.
+        - strong: Every little helps — because there is an enormous amount of little.
+  - generic [ref=f10e914]:
+    - generic:
+      - paragraph: 07 · The whole web
+      - heading "If the internet were a country…" [level=2]: If the internetwere a country…
+      - paragraph:
+        - text: …it would be among the largest electricity consumers on Earth. Digital technology is estimated to drive
+        - strong: 2–4% of global emissions
+        - text: — in the same league as aviation.
+      - paragraph:
+        - text: And it is gaining weight. The median page has roughly
+        - strong: tripled in size since 2012
+        - text: ": more script, more imagery, more video — rarely more useful."
+      - paragraph: median page weight0.8 MB (2012) → 1.9 MB (2018) → 2.7 MB (today)
+  - generic [ref=f10e953]:
+    - generic:
+      - paragraph: 08 · Lighter is a choice
+      - heading "Most pages could lose half their weight. Nobody would notice." [level=2]: Most pages could lose halftheir weight. Nobody would notice.
+      - generic:
+        - generic:
+          - heading "Compress images" [level=3]
+          - paragraph: Modern formats, right-sized. The single biggest saving on most pages.
+        - generic:
+          - heading "Ship less JavaScript" [level=3]
+          - paragraph: Every kilobyte is shipped, parsed and run — on the reader's battery.
+        - generic:
+          - heading "System fonts" [level=3]
+          - paragraph: Beautiful type is already on every device. This page ships zero font bytes.
+        - generic:
+          - heading "Video on demand" [level=3]
+          - paragraph: Never autoplay. A poster frame and a click saves megabytes per visit.
+        - generic:
+          - heading "Green hosting" [level=3]
+          - paragraph: Serve from data centres running on renewables. Same site, cleaner watts.
+        - generic:
+          - heading "Audit as you grow" [level=3]
+          - paragraph: Sites gain weight silently — every upload, plugin and rebuild adds up. Measure, monthly.
+      - paragraph: the LED moment for the web —lighter pages, at scale, are a real climate lever
+  - generic [ref=f10e955]:
+    - generic [ref=f10e956]:
+      - paragraph [ref=f10e957]: Consider · Digital
+      - heading "Where does your website stand?" [level=2] [ref=f10e958]: Where does yourwebsite stand?
+      - paragraph [ref=f10e959]: We test websites for their CO₂ footprint and run ongoing audits that catch bloat before it ships — unoptimised images, creeping scripts, forgotten video — so your site stays as light as the day it launched.
+      - link "Test your site's CO₂ →" [ref=f10e960] [cursor=pointer]:
+        - /url: https://websitecarboncheck.consider.digital/
+      - paragraph [ref=f10e961]: "Sources & workings: NESO / National Grid ESO generation data (2024) · HTTP Archive page-weight medians · Sustainable Web Design model v4 · websitecarbon.com. Figures are rounded — the point survives the rounding."
+    - generic "This page's own footprint" [ref=f10e962]:
+      - heading "This page — the receipt" [level=4] [ref=f10e963]
+      - generic [ref=f10e964]:
+        - generic [ref=f10e965]: document
+        - generic [ref=f10e967]: ~49 kB
+      - generic [ref=f10e968]:
+        - generic [ref=f10e969]: over the wire
+        - generic [ref=f10e971]: ~15 kB gzipped
+      - generic [ref=f10e972]:
+        - generic [ref=f10e973]: images
+        - generic [ref=f10e975]: "0"
+      - generic [ref=f10e976]:
+        - generic [ref=f10e977]: webfonts
+        - generic [ref=f10e979]: "0"
+      - generic [ref=f10e980]:
+        - generic [ref=f10e981]: tracking scripts
+        - generic [ref=f10e983]: "0"
+      - generic [ref=f10e984]:
+        - generic [ref=f10e985]: requests
+        - generic [ref=f10e987]: "1"
+      - generic [ref=f10e988]:
+        - generic [ref=f10e989]: CO₂e per view
+        - generic [ref=f10e991]: ≈ 0.01 g
+      - generic [ref=f10e992]:
+        - generic [ref=f10e993]: vs the median page
+        - generic [ref=f10e995]: ~98% lighter

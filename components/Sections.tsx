@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { CheckCircle2, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { CtaButton } from "@/components/CtaButton";
+import TreatmentJourney from "@/components/TreatmentJourney";
+import ConditionsCarousel from "@/components/ConditionsCarousel";
 import type { Block, Cta } from "@/lib/pages";
 import { site, serviceAreas } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -15,7 +17,7 @@ export function SplitSection({
   className,
 }: Extract<Block, { type: "split" }> & { className?: string }) {
   return (
-    <section className={cn("py-20 sm:py-24", className)}>
+    <section className={cn("pt-20 pb-14 sm:pt-24 sm:pb-16", className)}>
       <div className="container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className={cn("relative", reverse && "lg:order-2")}>
           <div className="absolute -inset-3 -z-10 rotate-2 rounded-[2rem] bg-linear-to-br from-brand-teal/25 to-brand-blue/10" />
@@ -26,7 +28,8 @@ export function SplitSection({
         <div>
           {eyebrow && <span className="eyebrow">{eyebrow}</span>}
           {heading && <h2 className={cn("heading", eyebrow && "mt-3")}>{heading}</h2>}
-          <div className={cn("prose-body", heading && "mt-6")}>
+          {heading && <span aria-hidden className="mt-6 block h-1 w-14 rounded-full bg-brand-cyan" />}
+          <div className={cn("prose-body", heading && "mt-7")}>
             {paragraphs.map((p) => (
               <p key={p.slice(0, 40)}>{p}</p>
             ))}
@@ -95,41 +98,6 @@ export function CtaSection({ heading, paragraphs, cta }: { heading: string; para
   );
 }
 
-export function ConditionsGrid({ heading, intro, items }: Extract<Block, { type: "conditions" }>) {
-  return (
-    <section className="bg-brand-light py-20 sm:py-24">
-      <div className="container-x">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="heading">{heading}</h2>
-          <p className="mt-4 text-lg text-slate-700">{intro}</p>
-        </div>
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item) => (
-            <li
-              key={item.title}
-              className="group flex items-center gap-4 overflow-hidden rounded-2xl bg-white p-3 shadow-card ring-1 ring-slate-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
-            >
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl">
-                <Image
-                  src={item.image}
-                  alt=""
-                  fill
-                  sizes="80px"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <h3 className="flex flex-1 items-start gap-2 pr-2 font-display font-bold text-brand-ink">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-teal-bright" aria-hidden />
-                {item.title}
-              </h3>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  );
-}
-
 export function PageBlocks({ blocks }: { blocks: Block[] }) {
   return (
     <>
@@ -142,7 +110,9 @@ export function PageBlocks({ blocks }: { blocks: Block[] }) {
           case "cta":
             return <CtaSection key={i} {...block} />;
           case "conditions":
-            return <ConditionsGrid key={i} {...block} />;
+            return <ConditionsCarousel key={i} {...block} />;
+          case "journey":
+            return <TreatmentJourney key={i} {...block} />;
         }
       })}
     </>
@@ -154,7 +124,7 @@ export function AreasWeService() {
     <section className="border-t border-slate-100 bg-white pt-12 pb-16 sm:pt-14">
       <div className="container-x">
         <div className="text-center">
-          <h2 className="heading">Areas We Service</h2>
+          <h2 className="font-display text-3xl font-bold tracking-tight text-brand-ink sm:text-4xl">Areas We Service</h2>
           <p className="eyebrow mt-3 justify-center">Physiotherapy</p>
         </div>
         <ul className="reveal-group mt-10 flex flex-wrap justify-center gap-2.5">

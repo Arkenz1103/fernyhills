@@ -108,8 +108,11 @@ export function Specialists() {
   );
 }
 
-/** Deep-blue call to action with decorative orbit rings. */
-export function ContactCta() {
+const defaultCtaText =
+  "Whatever you are suffering from—whether it be illness, injury, disability or simply the effects of ageing—we want to increase your mobility and help you achieve lasting results. To consult with an expert physiotherapist in Ferny Hills, call us today.";
+
+/** Deep-blue call to action with decorative orbit rings. Inner pages can pass their own sentence. */
+export function ContactCta({ text = defaultCtaText }: { text?: string }) {
   return (
     <section aria-labelledby="cta-heading" className="container-x pb-12 sm:pb-16">
       <div className="relative isolate overflow-hidden rounded-[2rem] bg-brand-blue px-6 py-14 text-white sm:px-12 sm:py-16 lg:px-16 lg:py-20">
@@ -125,11 +128,7 @@ export function ContactCta() {
             <h2 id="cta-heading" className="text-4xl leading-tight font-bold tracking-tight text-white sm:text-5xl">
               Contact us today
             </h2>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/80">
-              Whatever you are suffering from—whether it be illness, injury, disability or simply the effects of
-              ageing—we want to increase your mobility and help you achieve lasting results. To consult with an expert
-              physiotherapist in Ferny Hills, call us today.
-            </p>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/80">{text}</p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link href="/contact-us" className="btn btn-white">
                 <Send className="size-4" aria-hidden />

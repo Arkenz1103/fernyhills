@@ -1,42 +1,25 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
-import { CtaButton } from "@/components/CtaButton";
 
 export default function PageHero({
   eyebrow,
   title,
   image,
-  crumb,
 }: {
   eyebrow: string;
   title: string;
   image: string;
-  crumb: string;
 }) {
   return (
-    <section className="hero relative isolate overflow-hidden">
-      <Image src={image} alt="" fill priority sizes="100vw" className="hero-media -z-20 object-cover" />
-      <div className="absolute inset-0 -z-10 bg-linear-to-r from-brand-navy/95 via-brand-blue/85 to-brand-teal/60" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_bottom_right,rgba(59,154,178,0.5),transparent_60%)]" />
-      <div className="hero-enter container-x py-20 sm:py-28">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-white/90">
-          <Link href="/" className="hover:text-white">
-            Home
-          </Link>
-          <ChevronRight className="h-4 w-4" aria-hidden />
-          <span className="text-white">{crumb}</span>
-        </nav>
-        <p className="mt-6 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white backdrop-blur-md">
-          {eyebrow}
-        </p>
-        <h1 className="mt-5 max-w-3xl font-display text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
+    <section className="hero relative isolate flex min-h-[300px] items-center overflow-hidden sm:min-h-[400px]">
+      <Image src={image} alt="" fill priority unoptimized className="hero-media -z-20 object-cover object-[0%_31%]" />
+      {/* Soft fade behind the text only; the rest of the photo stays light */}
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-brand-ink/45 via-brand-ink/15 to-transparent" />
+      <div className="hero-enter container-x py-16 [text-shadow:0_1px_12px_rgba(11,42,66,0.35)]">
+        <h1 className="max-w-3xl font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
           {title}
         </h1>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <CtaButton cta={{ label: "Book Online", kind: "book" }} variant="secondary" />
-          <CtaButton cta={{ label: "Contact us", kind: "contact" }} variant="ghost" />
-        </div>
+        <span aria-hidden className="hero-accent mt-6 block h-1 w-16 rounded-full bg-white/90" />
+        <p className="mt-5 max-w-xl text-lg font-medium leading-relaxed text-white sm:text-xl">{eyebrow}</p>
       </div>
     </section>
   );

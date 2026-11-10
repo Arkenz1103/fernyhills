@@ -73,17 +73,38 @@
   @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.18em] text-brand-cyan uppercase;
 }
 
+/* Section headings: same size and weight as the homepage About heading */
 @utility heading {
-  @apply font-display text-3xl leading-tight font-bold tracking-tight text-brand-ink sm:text-4xl;
+  @apply font-display text-4xl leading-[1.1] font-bold tracking-tight text-balance text-brand-ink sm:text-[50px];
 }
 
+/* Body copy: same as the homepage About copy (18px, roomy lines, lead paragraph darker) */
 @utility prose-body {
   & p {
-    @apply leading-relaxed text-brand-body;
+    @apply text-lg leading-[1.8] text-brand-body;
+  }
+  & p:first-child {
+    @apply leading-relaxed font-medium text-brand-ink;
   }
   & p + p {
-    @apply mt-4;
+    @apply mt-5;
   }
+}
+
+/* Scroll-drawn line art (TreatmentJourney). Each shape has pathLength=1;
+   --t is the step's draw progress (0–1), --d delays individual strokes. */
+.draw-art :is(path, circle, rect) {
+  fill: none;
+  stroke: var(--color-brand-blue);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1 2;
+  stroke-dashoffset: calc(1 - clamp(0, (var(--t, 1) - var(--d, 0)) * 2, 1));
+}
+.draw-art .acc {
+  stroke: var(--color-brand-cyan);
+  stroke-width: 3;
 }
 
 /* Cards that lift on hover */
@@ -230,6 +251,11 @@
 
     /* Lists of small items (e.g. suburb buttons) arrive together as one block */
     main section:not(.hero) .reveal-group > li {
+      animation: none;
+    }
+
+    /* Sections with their own scroll animation (e.g. the pinned treatment journey) opt out */
+    main section.no-reveal :is(.container-x > *, li, img) {
       animation: none;
     }
 

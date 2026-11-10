@@ -22,8 +22,21 @@ export type Block =
       type: "conditions";
       heading: string;
       intro: string;
-      items: { title: string; image: string }[];
+      /** tab: short name for the tab row above the slider; href: the condition's own page, if it has one (otherwise Contact) */
+      items: { title: string; tab: string; image: string; href?: string }[];
+    }
+  | {
+      /** Scroll-driven story: steps pin in place and their line art draws as you scroll */
+      type: "journey";
+      eyebrow: string;
+      heading: string;
+      steps: { label: string; title: string; text: string; art: JourneyArt }[];
+      note: string;
+      cta: Cta;
+      image: string;
     };
+
+export type JourneyArt = "assess" | "team" | "treat" | "recover";
 
 export type PageContent = {
   slug: string;
@@ -58,34 +71,68 @@ export const services: PageContent = {
       heading: "How We Can Help",
       intro: "We treat for the following conditions:",
       items: [
-        { title: "Spinal Injuries", image: "/images/services/spinal-injuries.jpg" },
-        { title: "Neck and back pain", image: "/images/services/neck-back-pain.jpg" },
-        { title: "Arthritis", image: "/images/services/arthritis.jpg" },
-        { title: "Upper and lower limb injuries and conditions", image: "/images/services/limb-injuries.jpg" },
-        { title: "Sporting injuries", image: "/images/services/sporting-injuries.jpg" },
-        { title: "Work injuries", image: "/images/services/work-injuries.jpg" },
-        { title: "Whiplash", image: "/images/services/whiplash.jpg" },
-        { title: "Chronic pain", image: "/images/services/chronic-pain.jpg" },
-        { title: "Post-operative rehabilitation and more", image: "/images/services/post-operative.jpg" },
+        { title: "Spinal Injuries", tab: "Spinal Injuries", image: "/images/services/spinal-injuries.jpg" },
+        {
+          title: "Neck and back pain",
+          tab: "Neck & Back Pain",
+          image: "/images/services/neck-back-pain.jpg",
+          href: "/back-pain/",
+        },
+        { title: "Arthritis", tab: "Arthritis", image: "/images/services/arthritis.jpg", href: "/arthritis-treatment/" },
+        {
+          title: "Upper and lower limb injuries and conditions",
+          tab: "Limb Injuries",
+          image: "/images/services/limb-injuries.jpg",
+        },
+        {
+          title: "Sporting injuries",
+          tab: "Sporting Injuries",
+          image: "/images/services/sporting-injuries.jpg",
+          href: "/sports-physio-rehabilitation/",
+        },
+        { title: "Work injuries", tab: "Work Injuries", image: "/images/services/work-injuries.jpg" },
+        { title: "Whiplash", tab: "Whiplash", image: "/images/services/whiplash.jpg" },
+        { title: "Chronic pain", tab: "Chronic Pain", image: "/images/services/chronic-pain.jpg" },
+        {
+          title: "Post-operative rehabilitation and more",
+          tab: "Post-operative Rehab",
+          image: "/images/services/post-operative.jpg",
+        },
       ],
     },
     {
-      type: "split",
-      heading: "Our Personalised Treatment approach",
-      paragraphs: [
-        "Our treatment plan for you begins with a comprehensive assessment and physical exam to diagnose your condition. We then communicate with you and other health professionals to collaborate on a treatment and recovery plan to get you back on your feet. When we have determined your health goal, we will begin treatment which involves hands-on mobilisation and soft tissue techniques.",
-        "Once your initial complaint is treated, we will teach you to manage your pain and aid your recovery.",
-        "All of our treatment techniques are based on scientific research and clinical experience. We are always adapting to new treatment methods and advances in technology so you receive the most up-to-date care.",
+      type: "journey",
+      eyebrow: "Your recovery, step by step",
+      heading: "Our Personalised Treatment Approach",
+      steps: [
+        {
+          label: "Assessment",
+          title: "We start by understanding you",
+          text: "Our treatment plan for you begins with a comprehensive assessment and physical exam to diagnose your condition.",
+          art: "assess",
+        },
+        {
+          label: "Collaboration",
+          title: "We build your plan together",
+          text: "We then communicate with you and other health professionals to collaborate on a treatment and recovery plan to get you back on your feet.",
+          art: "team",
+        },
+        {
+          label: "Treatment",
+          title: "Hands-on care for your goal",
+          text: "When we have determined your health goal, we will begin treatment which involves hands-on mobilisation and soft tissue techniques.",
+          art: "treat",
+        },
+        {
+          label: "Recovery",
+          title: "You leave stronger",
+          text: "Once your initial complaint is treated, we will teach you to manage your pain and aid your recovery.",
+          art: "recover",
+        },
       ],
+      note: "All of our treatment techniques are based on scientific research and clinical experience. We are always adapting to new treatment methods and advances in technology so you receive the most up-to-date care.",
       cta: contact("Let's talk"),
       image: "/images/services/treatment-approach.jpg",
-      reverse: true,
-    },
-    {
-      type: "banner",
-      heading: "We use state-of-the-art equipment for your care",
-      cta: contact("Contact us"),
-      image: "/images/services/equipment-banner.webp",
     },
     {
       type: "split",

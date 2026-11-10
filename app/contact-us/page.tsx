@@ -18,7 +18,6 @@ export default function ContactPage() {
         eyebrow="Contact Us in Ferny Hills"
         title="Let us know what we can do for you"
         image="/images/services/contact-banner.webp"
-        crumb="Contact"
       />
 
       <section className="py-20 sm:py-24">
