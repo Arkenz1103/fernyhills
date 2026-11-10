@@ -40,7 +40,7 @@ export function About() {
             </p>
             <p>
               At Ferny Hills Physiotherapy Centre, we have gained an outstanding reputation as the best physio clinic in
-              Ferny Hill. This is because we only use state-of-the-art equipment and have expert physiotherapists.
+              Ferny Hill. This is because we only use the latest equipment and have expert physiotherapists.
             </p>
             <p>
               At our centre, we work with you to help you understand your condition or injury. Together, we will
@@ -75,7 +75,7 @@ export function Specialists() {
 
           <div className="mt-7 max-w-xl space-y-5 text-lg leading-[1.8] text-brand-body">
             <p className="text-lg leading-relaxed font-medium text-brand-ink">
-              Our long-established practice was purchased by Marcus Hood, a seasoned physiotherapist who built this
+              Our established practice was purchased by Marcus Hood, a seasoned physiotherapist who built this
               clinic through his expertise in rehabilitation and private practice during his stay in America. He has
               added a highly qualified team of senior physiotherapists with 80 years of combined experience who share
               his passion for healing.
@@ -109,7 +109,7 @@ export function Specialists() {
 }
 
 const defaultCtaText =
-  "Whatever you are suffering from—whether it be illness, injury, disability or simply the effects of ageing—we want to increase your mobility and help you achieve lasting results. To consult with an expert physiotherapist in Ferny Hills, call us today.";
+  "Whatever you are suffering from, whether it be illness, injury, disability or simply the effects of ageing, we want to increase your mobility and help you achieve lasting results. To consult with an expert physiotherapist in Ferny Hills, call us today.";
 
 /** Deep-blue call to action with decorative orbit rings. Inner pages can pass their own sentence. */
 export function ContactCta({ text = defaultCtaText }: { text?: string }) {

@@ -18,7 +18,12 @@ export default function ContentPage({ page, homeFooter = false }: { page: PageCo
 
   return (
     <>
-      <PageHero eyebrow={page.hero.eyebrow} title={page.hero.title} image={page.hero.image} />
+      <PageHero
+        eyebrow={page.hero.eyebrow}
+        title={page.hero.title}
+        image={page.hero.image}
+        imagePosition={page.hero.imagePosition}
+      />
       <PageBlocks blocks={blocks} />
       {homeFooter ? (
         <>

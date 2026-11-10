@@ -107,21 +107,21 @@ export default function TreatmentJourney({ eyebrow, heading, steps, note, cta, i
                 const on = i === active;
                 const done = i < active;
                 return (
-                  <li key={step.label} className="relative pb-5 pl-16 last:pb-0">
+                  <li key={step.label} className="relative pb-6 pl-11 last:pb-0 sm:pb-5 sm:pl-16">
                     {/* Connector to the next step: a cyan line drops down it as you scroll through this step */}
                     {i < steps.length - 1 && (
                       <>
-                        <span aria-hidden className="absolute top-10 bottom-0 left-5 w-0.5 -translate-x-1/2 bg-brand-blue/15" />
+                        <span aria-hidden className="absolute top-8 bottom-0 left-4 w-0.5 -translate-x-1/2 bg-brand-blue/15 sm:top-10 sm:left-5" />
                         <span
                           aria-hidden
-                          className="absolute top-10 bottom-0 left-5 w-0.5 origin-top -translate-x-1/2 bg-brand-cyan"
+                          className="absolute top-8 bottom-0 left-4 w-0.5 origin-top -translate-x-1/2 bg-brand-cyan sm:top-10 sm:left-5"
                           style={{ scale: `1 clamp(0, calc(var(--p) * ${steps.length} - ${i}), 1)` }}
                         />
                       </>
                     )}
                     <span
                       className={cn(
-                        "absolute top-0 left-0 grid size-10 place-items-center rounded-full border-2 text-sm font-bold transition-colors duration-500",
+                        "absolute top-0 left-0 grid size-8 place-items-center rounded-full border-2 text-xs font-bold transition-colors duration-500 sm:size-10 sm:text-sm",
                         on || done
                           ? "border-brand-cyan bg-brand-cyan text-white"
                           : "border-brand-blue/25 bg-white text-brand-blue",
@@ -131,7 +131,7 @@ export default function TreatmentJourney({ eyebrow, heading, steps, note, cta, i
                     </span>
                     <p
                       className={cn(
-                        "pt-2 text-xs font-semibold tracking-[0.18em] uppercase transition-colors duration-500",
+                        "pt-1.5 text-xs font-semibold tracking-[0.18em] uppercase transition-colors duration-500 sm:pt-2",
                         on ? "text-brand-cyan" : "text-brand-blue",
                       )}
                     >
@@ -145,7 +145,7 @@ export default function TreatmentJourney({ eyebrow, heading, steps, note, cta, i
                       )}
                     >
                       <div className="overflow-hidden">
-                        <h3 className="mt-1.5 font-display text-xl font-bold text-brand-ink sm:text-2xl">{step.title}</h3>
+                        <h3 className="mt-1.5 font-display text-xl leading-snug font-bold text-brand-ink sm:text-2xl">{step.title}</h3>
                         <p className="mt-2 max-w-xl text-lg leading-[1.7] text-brand-body">{step.text}</p>
                       </div>
                     </div>
@@ -154,7 +154,7 @@ export default function TreatmentJourney({ eyebrow, heading, steps, note, cta, i
               })}
             </ol>
 
-            <p className="mt-8 max-w-xl border-l-4 border-brand-cyan pl-5 font-medium leading-relaxed text-brand-blue">
+            <p className="mt-8 max-w-xl border-l-4 border-brand-cyan pl-4 font-medium sm:pl-5 leading-relaxed text-brand-blue">
               {note}
             </p>
             <CtaButton cta={cta} className="mt-7" />
@@ -162,7 +162,7 @@ export default function TreatmentJourney({ eyebrow, heading, steps, note, cta, i
 
           {/* One frame: the photo shows first, then wipes away on scroll to reveal the line drawings (desktop) */}
           <div className="relative">
-            <div className="absolute -inset-3 rotate-2 rounded-[2rem] bg-linear-to-br from-brand-teal/25 to-brand-blue/10" />
+            <div className="absolute -inset-2 rotate-1 rounded-[2rem] bg-linear-to-br sm:-inset-3 sm:rotate-2 from-brand-teal/25 to-brand-blue/10" />
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-white shadow-card-hover">
               {/* Line art layer (sits under the photo) */}
               <div aria-hidden className="dot-grid absolute inset-0 hidden opacity-40 lg:block" />

@@ -16,7 +16,7 @@ const services: Service[] = [
   {
     title: "Arthritis Treatment",
     href: "/arthritis-treatment",
-    excerpt: "We want to put an end to the pain causing the struggle in your every-day tasks.",
+    excerpt: "We want to put an end to the pain causing the struggle in your everyday tasks.",
     image: "/images/arthritis.jpg",
     imageAlt: "A physiotherapist treating a patient's arthritic joint",
     icon: Bone,

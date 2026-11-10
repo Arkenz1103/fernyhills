@@ -17,6 +17,8 @@ export type Block =
       reverse?: boolean;
     }
   | { type: "banner"; heading: string; cta: Cta; image: string }
+  /** line: small scroll-drawn hairline transition between two sections */
+  | { type: "line" }
   | { type: "cta"; heading: string; paragraphs: string[]; cta: Cta }
   | {
       type: "conditions";
@@ -62,7 +64,8 @@ export type JourneyArt = "assess" | "team" | "treat" | "recover";
 export type PageContent = {
   slug: string;
   title: string;
-  hero: { eyebrow: string; title: string; image: string; cta?: Cta };
+  /** imagePosition: CSS object-position for the banner photo, to keep its subject in frame */
+  hero: { eyebrow: string; title: string; image: string; imagePosition?: string; cta?: Cta };
   blocks: Block[];
 };
 
@@ -115,8 +118,8 @@ export const services: PageContent = {
         { title: "Whiplash", tab: "Whiplash", image: "/images/services/whiplash.jpg" },
         { title: "Chronic pain", tab: "Chronic Pain", image: "/images/services/chronic-pain.jpg" },
         {
-          title: "Post-operative rehabilitation and more",
-          tab: "Post-operative Rehab",
+          title: "Rehabilitation after surgery and more",
+          tab: "Rehab After Surgery",
           image: "/images/services/post-operative.jpg",
         },
       ],
@@ -140,8 +143,8 @@ export const services: PageContent = {
         },
         {
           label: "Treatment",
-          title: "Hands-on care for your goal",
-          text: "When we have determined your health goal, we will begin treatment which involves hands-on mobilisation and soft tissue techniques.",
+          title: "Personal care for your goal",
+          text: "When we have determined your health goal, we will begin treatment which involves manual mobilisation and soft tissue techniques.",
           art: "treat",
         },
         {
@@ -151,7 +154,7 @@ export const services: PageContent = {
           art: "recover",
         },
       ],
-      note: "All of our treatment techniques are based on scientific research and clinical experience. We are always adapting to new treatment methods and advances in technology so you receive the most up-to-date care.",
+      note: "All of our treatment techniques are based on scientific research and clinical experience. We are always adapting to new treatment methods and advances in technology so you receive the latest care.",
       cta: contact("Let's talk"),
       image: "/images/services/treatment-approach.jpg",
     },
@@ -189,8 +192,8 @@ export const arthritis: PageContent = {
       type: "split",
       heading: "Treatment to relieve your suffering",
       paragraphs: [
-        "Do you struggle to climb the stairs in your own home because your joints are screaming at you in protest? You aren’t alone – there are over 100 different kinds of arthritis, and it afflicts all age groups. Commonly, it is accompanied by pain, swelling, stiffness and decreased range of motion in the joints. Worst of all, it can cause permanent changes in your joints.",
-        "We want to put an end to the pain causing the struggle in your every-day tasks.",
+        "Do you struggle to climb the stairs in your own home because your joints are screaming at you in protest? You aren’t alone. There are over 100 different kinds of arthritis, and it afflicts all age groups. Commonly, it is accompanied by pain, swelling, stiffness and decreased range of motion in the joints. Worst of all, it can cause permanent changes in your joints.",
+        "We want to put an end to the pain causing the struggle in your everyday tasks.",
       ],
       cta: call("Call today"),
       image: "/images/pages/arthritis-relief.jpg",
@@ -208,10 +211,10 @@ export const arthritis: PageContent = {
           signs: "Stiffness on the stairs, trouble getting up from a chair, and swelling after a long walk.",
           helps: [
             "Thigh and hip strengthening to take load off the knee",
-            "Hands-on mobilisation to ease stiffness",
+            "Manual mobilisation to ease stiffness",
             "Braces or Gaitscan™ custom orthotics where alignment adds strain",
           ],
-          link: { label: "Low-impact exercise in hydrotherapy", href: "/hydrotherapy/" },
+          link: { label: "Gentle exercise in hydrotherapy", href: "/hydrotherapy/" },
         },
         {
           id: "hip",
@@ -242,9 +245,9 @@ export const arthritis: PageContent = {
           name: "Neck & back",
           signs: "Morning stiffness and an ache that eases once you get moving.",
           helps: [
-            "Mobility and core-strength exercises",
-            "Posture and sleeping-position advice",
-            "Manual therapy and heat to settle flare-ups",
+            "Mobility and core strength exercises",
+            "Advice on posture and sleeping positions",
+            "Manual therapy and heat to settle painful flares",
           ],
           link: { label: "Back pain treatment", href: "/back-pain/" },
         },
@@ -290,6 +293,7 @@ export const sports: PageContent = {
     eyebrow: "Serving Samford",
     title: "Sports Injury Rehabilitation Services in Ferny Hills",
     image: "/images/pages/sports-hero.webp",
+    imagePosition: "30% 12%",
   },
   blocks: [
     {
@@ -301,12 +305,7 @@ export const sports: PageContent = {
       cta: contact("Enquire now"),
       image: "/images/pages/sports-quality.jpg",
     },
-    {
-      type: "banner",
-      heading: "We were voted the best physio clinic around",
-      cta: contact("Contact us"),
-      image: "/images/services/equipment-banner.webp",
-    },
+    { type: "line" },
     {
       type: "split",
       heading: "Prevent injuries",
@@ -322,7 +321,7 @@ export const sports: PageContent = {
       type: "cta",
       heading: "Start healing",
       paragraphs: [
-        "Every injury is unique and everyone heals differently. Ferny Hills specialists will identify the cause for your specific injury, create a program and help you prevent injury in the future. But don’t wait until you’re injured – call us today so we can help optimise your sports performance and help you play safely.",
+        "Every injury is unique and everyone heals differently. Ferny Hills specialists will identify the cause for your specific injury, create a program and help you prevent injury in the future. But don’t wait until you’re injured. Call us today so we can help optimise your sports performance and help you play safely.",
       ],
       cta: contact("Start healing today"),
     },
@@ -359,7 +358,7 @@ export const backPain: PageContent = {
       heading: "Treat the pain source",
       paragraphs: [
         "Ferny Hills Physiotherapy will perform an evaluation to determine the cause of your back pain. We will review your health history and ask questions about your symptoms to pinpoint any behaviours that may be contributing factors to your pain. We will decide upon a course of action and treat you with manual therapy, exercises and use of heat or ice to relieve pain.",
-        "We also teach you to maintain proper posture throughout the day and help you learn to listen to your body’s signals that your body mechanics are misaligned. This includes training for proper lifting, sitting, and bending and proper sleeping positions. We can prescribe you the long-term exercises we see fit for your condition and change them when necessary.",
+        "We also teach you to maintain proper posture throughout the day and help you learn to listen to your body’s signals that your body mechanics are misaligned. This includes training for proper lifting, sitting, and bending and proper sleeping positions. We can prescribe you the ongoing exercises we see fit for your condition and change them when necessary.",
       ],
       cta: contact("Let's talk"),
       image: "/images/pages/back-pain-source.jpg",
@@ -379,7 +378,7 @@ export const hydrotherapy: PageContent = {
   title: "Hydrotherapy",
   hero: {
     eyebrow: "Hydrotherapy in Ferny Hills",
-    title: "Reduce sudden or long-lasting pain",
+    title: "Reduce sudden or lasting pain",
     image: "/images/pages/hydro-hero.webp",
   },
   blocks: [
@@ -387,7 +386,7 @@ export const hydrotherapy: PageContent = {
       type: "split",
       heading: "What is Hydrotherapy?",
       paragraphs: [
-        "Hydrotherapy, also called “water cure,” is a low-impact way of treating pain and maintaining overall health in a natural, non-invasive way. It has shown to be one of the safest treatment methods for back pain and arthritis. We also use it in aiding muscle pain, nerve problems and relaxation.",
+        "Hydrotherapy, also called “water cure,” is a gentle, natural way of treating pain and maintaining overall health without invasive procedures. It has shown to be one of the safest treatment methods for back pain and arthritis. We also use it in aiding muscle pain, nerve problems and relaxation.",
       ],
       cta: contact("More information"),
       image: "/images/pages/hydro-what.jpg",

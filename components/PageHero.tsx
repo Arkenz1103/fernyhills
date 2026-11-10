@@ -4,14 +4,19 @@ export default function PageHero({
   eyebrow,
   title,
   image,
+  imagePosition = "0% 31%",
 }: {
   eyebrow: string;
   title: string;
   image: string;
+  /** CSS object-position: which part of the photo stays in view as it crops */
+  imagePosition?: string;
 }) {
   return (
     <section className="hero relative isolate flex min-h-[300px] items-center overflow-hidden sm:min-h-[400px]">
-      <Image src={image} alt="" fill priority unoptimized className="hero-media -z-20 object-cover object-[0%_31%]" />
+      <Image src={image} alt="" fill priority unoptimized className="hero-media -z-20 object-cover"
+        style={{ objectPosition: imagePosition }}
+      />
       {/* Soft fade behind the text only; the rest of the photo stays light */}
       <div className="absolute inset-0 -z-10 bg-linear-to-r from-brand-ink/45 via-brand-ink/15 to-transparent" />
       <div className="hero-enter container-x py-16 [text-shadow:0_1px_12px_rgba(11,42,66,0.35)]">

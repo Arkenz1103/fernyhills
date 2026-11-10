@@ -11,7 +11,7 @@ export const site = {
   email: "info@fernyhillsphysiotherapy.com.au",
   emailHref: "mailto:info@fernyhillsphysiotherapy.com.au",
   address: "170 Patricks Road Ferny Hills QLD 4055",
-  hours: "Appts available now 7am – 6pm",
+  hours: "Appts available now 7am to 6pm",
   bookingUrl:
     "http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==",
   yellowPagesUrl:

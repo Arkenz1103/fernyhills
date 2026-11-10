@@ -4,6 +4,7 @@ import ContactForm from "@/components/ContactForm";
 import PageHero from "@/components/PageHero";
 import { AreasWeService, BannerSection } from "@/components/Sections";
 import { site } from "@/lib/site";
+import { keepTogether } from "@/lib/utils";
 
 export const metadata: Metadata = { title: "Contact us", alternates: { canonical: "/contact-us/" } };
 
@@ -65,7 +66,7 @@ export default function ContactPage() {
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-brand-blue to-brand-teal-bright text-white">
                   <Clock className="h-5 w-5" aria-hidden />
                 </span>
-                <span className="text-lg font-semibold text-brand-ink">{site.hours}</span>
+                <span className="text-lg font-semibold text-brand-ink">{keepTogether(site.hours)}</span>
               </li>
             </ul>
           </div>

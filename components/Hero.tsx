@@ -13,8 +13,10 @@ const HERO_FALLBACK = "/images/clinic-1.jpg";
 const HERO_FOCUS = "object-[60%_28%]";
 
 /**
- * Light hero: the photo is anchored to the right edge of the screen and dissolves leftwards
- * into the off-white background behind the copy (on small screens it sits on top and fades downwards).
+ * Large screens: a light hero where the photo is anchored to the right edge of the screen and
+ * dissolves leftwards into the off-white background behind the copy.
+ * Small screens: the same light look, with the photo filling the banner behind the copy under
+ * an off-white wash, so the copy stays together instead of stacking under the photo.
  */
 export default function Hero() {
   const heroSrc = existsSync(join(process.cwd(), "public", HERO_IMAGE)) ? HERO_IMAGE : HERO_FALLBACK;
@@ -22,7 +24,7 @@ export default function Hero() {
   return (
     <section aria-labelledby="hero-heading" className="hero relative isolate overflow-hidden bg-slate-50">
       {/* Photo + fade */}
-      <div className="relative h-80 overflow-hidden sm:h-[28rem] lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[68%]">
+      <div className="absolute inset-0 -z-10 overflow-hidden lg:left-auto lg:z-auto lg:w-[68%]">
         <Image
           src={heroSrc}
           alt="A physiotherapist assessing a patient's lower back"
@@ -31,10 +33,10 @@ export default function Hero() {
           sizes="(min-width:1024px) 68vw, 100vw"
           className={`hero-media size-full object-cover ${HERO_FOCUS}`}
         />
-        {/* Small screens: dissolve downwards into the copy */}
+        {/* Small screens: off-white wash so the dark copy reads clearly over the photo */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-[linear-gradient(to_top,var(--color-slate-50)_0%,rgb(248_250_252/0.75)_22%,rgb(248_250_252/0.15)_50%,transparent_70%)] lg:hidden"
+          className="absolute inset-0 bg-[linear-gradient(to_right,rgb(248_250_252/0.96)_0%,rgb(248_250_252/0.88)_55%,rgb(248_250_252/0.7)_100%)] lg:hidden"
         />
         {/* Large screens: solid off-white at the photo's left edge, fully clear across the right side */}
         <div
@@ -44,10 +46,10 @@ export default function Hero() {
       </div>
 
       {/* Copy */}
-      <div className="container-x relative pt-2 pb-16 sm:pb-20 lg:flex lg:min-h-[min(44rem,calc(100svh-7.5rem))] lg:items-center lg:py-24">
+      <div className="container-x relative py-16 sm:py-20 lg:flex lg:min-h-[min(44rem,calc(100svh-7.5rem))] lg:items-center lg:py-24">
         <div className="hero-enter max-w-xl">
-          <p className="flex items-center gap-3 text-lg font-bold tracking-[0.2em] text-brand-blue uppercase">
-            <span aria-hidden className="hero-accent h-0.5 w-8 rounded-full bg-brand-cyan" />
+          <p className="flex items-center gap-3 text-[min(0.8rem,3.6vw)] font-bold tracking-[0.14em] text-brand-blue uppercase sm:text-base sm:tracking-[0.2em] lg:text-lg">
+            <span aria-hidden className="hero-accent hidden h-0.5 w-8 shrink-0 rounded-full bg-brand-cyan min-[360px]:block" />
             Physiotherapist in Ferny Hills
           </p>
 

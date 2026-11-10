@@ -4,6 +4,7 @@ import { CtaButton } from "@/components/CtaButton";
 import TreatmentJourney from "@/components/TreatmentJourney";
 import ConditionsCarousel from "@/components/ConditionsCarousel";
 import JointExplorer from "@/components/JointExplorer";
+import LineTransition from "@/components/LineTransition";
 import type { Block, Cta } from "@/lib/pages";
 import { site, serviceAreas } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -116,6 +117,8 @@ export function PageBlocks({ blocks }: { blocks: Block[] }) {
             return <TreatmentJourney key={i} {...block} />;
           case "joints":
             return <JointExplorer key={i} {...block} />;
+          case "line":
+            return <LineTransition key={i} />;
         }
       })}
     </>
