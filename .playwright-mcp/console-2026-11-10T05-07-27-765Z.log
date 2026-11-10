@@ -1,0 +1,6 @@
+[      55ms] [LOG] [Fast Refresh] done in 31ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1bjkg68unqmjx._.js:761
+[     597ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://unsplash.com/.within.website?redir=%2Fs%2Fphotos%2Fhand-therapy%3Flicense%3Dfree:1
+[     713ms] [LOG] {hash: 0e00a7367a8e33a42b6c3c98d25f747d3f6ab0cfa17494333bb17b18fa93c125, nonce: 91} @ https://unsplash.com/.within.website/x/cmd/anubis/static/js/main.mjs?cacheBuster=v1.26.2+dirty:31
+[    2633ms] [LOG] %cmetric: color:gray {name: TTFB, entries: Array(1), value: 1134.5999999977648, rating: needs-improvement, delta: 1134.5999999977648} @ https://unsplash.com/a/en-US/5p.e20c391ec5.js:5
+[    2634ms] [LOG] %cusr: color:gray {locale: en-US} @ https://unsplash.com/a/en-US/5p.e20c391ec5.js:5
+[    2634ms] [LOG] %croute_data: color:gray Search-Photos @ https://unsplash.com/a/en-US/5p.e20c391ec5.js:5

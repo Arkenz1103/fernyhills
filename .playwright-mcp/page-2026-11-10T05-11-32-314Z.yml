@@ -1,0 +1,255 @@
+- generic [active] [ref=f40e1]:
+  - link "Skip to main content" [ref=f40e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f40e3]:
+    - navigation "Main" [ref=f40e4]:
+      - link "Ferny Hills Physiotherapy – Home" [ref=f40e5] [cursor=pointer]:
+        - /url: /
+        - img "Ferny Hills Physiotherapy" [ref=f40e6]
+      - list [ref=f40e7]:
+        - listitem [ref=f40e8]:
+          - link "Home" [ref=f40e9] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f40e10]:
+          - link "Services" [ref=f40e11] [cursor=pointer]:
+            - /url: /services/
+        - listitem [ref=f40e12]:
+          - link "Arthritis Treatment" [ref=f40e13] [cursor=pointer]:
+            - /url: /arthritis-treatment/
+        - listitem [ref=f40e14]:
+          - link "Sports Physio Rehabilitation" [ref=f40e15] [cursor=pointer]:
+            - /url: /sports-physio-rehabilitation/
+        - listitem [ref=f40e16]:
+          - link "Back Pain" [ref=f40e17] [cursor=pointer]:
+            - /url: /back-pain/
+        - listitem [ref=f40e18]:
+          - link "Hydrotherapy" [ref=f40e19] [cursor=pointer]:
+            - /url: /hydrotherapy/
+        - listitem [ref=f40e20]:
+          - link "Contact" [ref=f40e21] [cursor=pointer]:
+            - /url: /contact-us/
+      - link "Book Online" [ref=f40e23] [cursor=pointer]:
+        - /url: http://bookings.ppmp.com.au/?ver=9IEGaMIPbqIHiUJMOUSEAx5lOeMhUUqjm0PlgMYSgK7xxBijrsm7tArnQ2AJFYbBbn6W1cVC3UkOlIJpK0zNV/8SQ==
+  - main [ref=f40e27]:
+    - generic [ref=f40e30]:
+      - heading "Our friendly staff is here for you" [level=1] [ref=f40e31]
+      - paragraph [ref=f40e33]: Arthritis Treatment Available in Ferny Hills
+    - generic [ref=f40e39]:
+      - heading "Treatment to relieve your suffering" [level=2] [ref=f40e40]
+      - generic [ref=f40e42]:
+        - paragraph [ref=f40e43]: Do you struggle to climb the stairs in your own home because your joints are screaming at you in protest? You aren’t alone – there are over 100 different kinds of arthritis, and it afflicts all age groups. Commonly, it is accompanied by pain, swelling, stiffness and decreased range of motion in the joints. Worst of all, it can cause permanent changes in your joints.
+        - paragraph [ref=f40e44]: We want to put an end to the pain causing the struggle in your every-day tasks.
+      - link "Call today" [ref=f40e45] [cursor=pointer]:
+        - /url: tel:0733515177
+    - region "We personalise treatment to your joints" [ref=f40e48]:
+      - generic [ref=f40e49]:
+        - generic [ref=f40e52]:
+          - generic [ref=f40e53]: Where does it hurt?
+          - heading "We personalise treatment to your joints" [level=2] [ref=f40e54]
+          - paragraph [ref=f40e55]: Arthritis feels different in every joint. Tap a joint to see the common signs and how our physiotherapists can help.
+        - generic [ref=f40e56]:
+          - generic [ref=f40e61]:
+            - paragraph [ref=f40e62]: Knees
+            - generic [ref=f40e63]: 01 / 05
+          - generic [ref=f40e65]:
+            - list "Joints" [ref=f40e66]:
+              - listitem [ref=f40e67]:
+                - button "Knees" [pressed] [ref=f40e68]
+              - listitem [ref=f40e69]:
+                - button "Hips" [ref=f40e70]
+              - listitem [ref=f40e71]:
+                - button "Shoulders" [ref=f40e72]
+              - listitem [ref=f40e73]:
+                - button "Neck & back" [ref=f40e74]
+              - listitem [ref=f40e75]:
+                - button "Ankles & feet" [ref=f40e76]
+            - generic [ref=f40e77]:
+              - heading "Knees" [level=3] [ref=f40e78]
+              - paragraph [ref=f40e79]: "Common signs: Stiffness on the stairs, trouble getting up from a chair, and swelling after a long walk."
+              - paragraph [ref=f40e80]: How physio helps
+              - list [ref=f40e81]:
+                - listitem [ref=f40e82]: Thigh and hip strengthening to take load off the knee
+                - listitem [ref=f40e86]: Hands-on mobilisation to ease stiffness
+                - listitem [ref=f40e90]: Braces or Gaitscan™ custom orthotics where alignment adds strain
+              - link "Low-impact exercise in hydrotherapy" [ref=f40e94] [cursor=pointer]:
+                - /url: /hydrotherapy/
+            - link "Book an assessment" [ref=f40e97] [cursor=pointer]:
+              - /url: /contact-us/
+    - generic [ref=f40e105]:
+      - heading "How we can help" [level=2] [ref=f40e106]
+      - generic [ref=f40e108]:
+        - paragraph [ref=f40e109]: A physiotherapist can get you moving again and that’s where we come in. We focus on strengthening your body to support your joints, getting them moving again and improving your overall ability to move. Our goal is to get you back to your daily activities without the suffering.
+        - paragraph [ref=f40e110]: In order to get you to this point, we come up with an individualised exercise plan for you to increase your strength and flexibility. Our hope is that you will come away from your visits with an increased knowledge of how to perform exercises independently so you can do them even when we aren’t around.
+        - paragraph [ref=f40e111]: In addition to these exercises, we may recommend using devices to assist you such as walkers, braces, orthotics, splints, and other such materials for easing your pain and making your day easier.
+      - link "Let's talk" [ref=f40e112] [cursor=pointer]:
+        - /url: /contact-us/
+    - region "Contact us today" [ref=f40e115]:
+      - generic [ref=f40e117]:
+        - generic [ref=f40e118]:
+          - heading "Contact us today" [level=2] [ref=f40e119]
+          - paragraph [ref=f40e120]: Stop living with arthritis pain. Give us a call and let us help you enjoy life again.
+          - link "Send a message" [ref=f40e122] [cursor=pointer]:
+            - /url: /contact-us/
+        - generic [ref=f40e126]:
+          - generic [ref=f40e130]:
+            - term [ref=f40e131]: Call us
+            - definition [ref=f40e132]:
+              - link "07 3351 5177" [ref=f40e133] [cursor=pointer]:
+                - /url: tel:0733515177
+          - generic [ref=f40e138]:
+            - term [ref=f40e139]: Hours
+            - definition [ref=f40e140]: Appts available now 7am – 6pm
+          - generic [ref=f40e145]:
+            - term [ref=f40e146]: Visit
+            - definition [ref=f40e147]: 170 Patricks Road Ferny Hills QLD 4055
+    - region "Areas We Service" [ref=f40e148]:
+      - generic [ref=f40e149]:
+        - heading "Areas We Service" [level=2] [ref=f40e150]
+        - paragraph [ref=f40e151]: Physiotherapy
+        - list [ref=f40e152]:
+          - listitem [ref=f40e153]:
+            - link "Physiotherapist in Everton Hills" [ref=f40e154] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-hills/
+              - generic [ref=f40e158]: Physiotherapist in
+              - text: Everton Hills
+          - listitem [ref=f40e161]:
+            - link "Physiotherapist in Samford" [ref=f40e162] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-samford/
+              - generic [ref=f40e166]: Physiotherapist in
+              - text: Samford
+          - listitem [ref=f40e169]:
+            - link "Physiotherapist in Everton Park" [ref=f40e170] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-everton-park/
+              - generic [ref=f40e174]: Physiotherapist in
+              - text: Everton Park
+          - listitem [ref=f40e177]:
+            - link "Physiotherapist in Stafford" [ref=f40e178] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-stafford/
+              - generic [ref=f40e182]: Physiotherapist in
+              - text: Stafford
+          - listitem [ref=f40e185]:
+            - link "Physiotherapist in Arana Hills" [ref=f40e186] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-arana-hills/
+              - generic [ref=f40e190]: Physiotherapist in
+              - text: Arana Hills
+          - listitem [ref=f40e193]:
+            - link "Physiotherapist in Bunya" [ref=f40e194] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-bunya/
+              - generic [ref=f40e198]: Physiotherapist in
+              - text: Bunya
+          - listitem [ref=f40e201]:
+            - link "Physiotherapist in Ferny Grove" [ref=f40e202] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-ferny-grove/
+              - generic [ref=f40e206]: Physiotherapist in
+              - text: Ferny Grove
+          - listitem [ref=f40e209]:
+            - link "Physiotherapist in Keperra" [ref=f40e210] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-keperra/
+              - generic [ref=f40e214]: Physiotherapist in
+              - text: Keperra
+          - listitem [ref=f40e217]:
+            - link "Physiotherapist in Alderley" [ref=f40e218] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-alderley/
+              - generic [ref=f40e222]: Physiotherapist in
+              - text: Alderley
+          - listitem [ref=f40e225]:
+            - link "Physiotherapist in Albany Creek" [ref=f40e226] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-albany-creek/
+              - generic [ref=f40e230]: Physiotherapist in
+              - text: Albany Creek
+          - listitem [ref=f40e233]:
+            - link "Physiotherapist in McDowall" [ref=f40e234] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-mcdowall/
+              - generic [ref=f40e238]: Physiotherapist in
+              - text: McDowall
+          - listitem [ref=f40e241]:
+            - link "Physiotherapist in Draper" [ref=f40e242] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-draper/
+              - generic [ref=f40e246]: Physiotherapist in
+              - text: Draper
+          - listitem [ref=f40e249]:
+            - link "Physiotherapist in The Gap" [ref=f40e250] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-the-gap/
+              - generic [ref=f40e254]: Physiotherapist in
+              - text: The Gap
+          - listitem [ref=f40e257]:
+            - link "Physiotherapist in Mitchelton" [ref=f40e258] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-mitchelton/
+              - generic [ref=f40e262]: Physiotherapist in
+              - text: Mitchelton
+          - listitem [ref=f40e265]:
+            - link "Physiotherapist in Stafford Heights" [ref=f40e266] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-stafford-heights/
+              - generic [ref=f40e270]: Physiotherapist in
+              - text: Stafford Heights
+          - listitem [ref=f40e273]:
+            - link "Physiotherapist in Upper Kedron" [ref=f40e274] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-upper-kedron/
+              - generic [ref=f40e278]: Physiotherapist in
+              - text: Upper Kedron
+          - listitem [ref=f40e281]:
+            - link "Physiotherapist in Enoggera" [ref=f40e282] [cursor=pointer]:
+              - /url: https://fernyhillsphysiotherapy.com.au/physiotherapist-in-enoggera/
+              - generic [ref=f40e286]: Physiotherapist in
+              - text: Enoggera
+  - contentinfo [ref=f40e289]:
+    - generic [ref=f40e290]:
+      - generic [ref=f40e291]:
+        - link "Ferny Hills Physiotherapy – Home" [ref=f40e292] [cursor=pointer]:
+          - /url: /
+          - img "Ferny Hills Physiotherapy" [ref=f40e293]
+        - paragraph [ref=f40e294]: Ferny Hills Physiotherapy is a physiotherapy clinic located at 170 Patricks Road, Ferny Hills QLD, Australia, offering services such as sports rehabilitation, arthritis treatment, back pain management, and hydrotherapy.
+        - link "Find us on Yellow Pages" [ref=f40e295] [cursor=pointer]:
+          - /url: https://www.yellowpages.com.au/qld/ferny-hills/ferny-hills-physiotherapy-12076332-listing.html
+      - navigation "Quick Links" [ref=f40e296]:
+        - heading "Quick Links" [level=2] [ref=f40e297]
+        - list [ref=f40e298]:
+          - listitem [ref=f40e299]:
+            - link "Home" [ref=f40e300] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f40e301]:
+            - link "Services" [ref=f40e302] [cursor=pointer]:
+              - /url: /services/
+          - listitem [ref=f40e303]:
+            - link "Arthritis Treatment" [ref=f40e304] [cursor=pointer]:
+              - /url: /arthritis-treatment/
+          - listitem [ref=f40e305]:
+            - link "Sports Physio Rehabilitation" [ref=f40e306] [cursor=pointer]:
+              - /url: /sports-physio-rehabilitation/
+          - listitem [ref=f40e307]:
+            - link "Back Pain" [ref=f40e308] [cursor=pointer]:
+              - /url: /back-pain/
+          - listitem [ref=f40e309]:
+            - link "Hydrotherapy" [ref=f40e310] [cursor=pointer]:
+              - /url: /hydrotherapy/
+          - listitem [ref=f40e311]:
+            - link "Contact" [ref=f40e312] [cursor=pointer]:
+              - /url: /contact-us/
+      - generic [ref=f40e313]:
+        - generic [ref=f40e314]:
+          - term [ref=f40e315]: "Phone:"
+          - definition [ref=f40e316]:
+            - link "07 3351 5177" [ref=f40e317] [cursor=pointer]:
+              - /url: tel:0733515177
+        - generic [ref=f40e318]:
+          - term [ref=f40e319]: "Address:"
+          - definition [ref=f40e320]:
+            - generic [ref=f40e321]: 170 Patricks Road Ferny Hills QLD 4055
+        - generic [ref=f40e322]:
+          - term [ref=f40e323]: "Email:"
+          - definition [ref=f40e324]:
+            - link "info@fernyhillsphysiotherapy.com.au" [ref=f40e325] [cursor=pointer]:
+              - /url: mailto:info@fernyhillsphysiotherapy.com.au
+        - generic [ref=f40e326]:
+          - term [ref=f40e327]: "Hours:"
+          - definition [ref=f40e328]: Appts available now 7am – 6pm
+    - generic [ref=f40e330]:
+      - paragraph [ref=f40e331]:
+        - text: Copyright © 2026 Ferny Hills Physiotherapy ·
+        - link "Privacy Policy" [ref=f40e332] [cursor=pointer]:
+          - /url: https://fernyhillsphysiotherapy.com.au/privacy-policy/
+      - paragraph [ref=f40e333]:
+        - text: Website design and hosting by
+        - link "WaynAI" [ref=f40e334] [cursor=pointer]:
+          - /url: https://waynai.com.au/
+  - button "Open Next.js Dev Tools" [ref=f40e340] [cursor=pointer]

@@ -3,6 +3,7 @@ import { MapPin, Phone } from "lucide-react";
 import { CtaButton } from "@/components/CtaButton";
 import TreatmentJourney from "@/components/TreatmentJourney";
 import ConditionsCarousel from "@/components/ConditionsCarousel";
+import JointExplorer from "@/components/JointExplorer";
 import type { Block, Cta } from "@/lib/pages";
 import { site, serviceAreas } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -113,6 +114,8 @@ export function PageBlocks({ blocks }: { blocks: Block[] }) {
             return <ConditionsCarousel key={i} {...block} />;
           case "journey":
             return <TreatmentJourney key={i} {...block} />;
+          case "joints":
+            return <JointExplorer key={i} {...block} />;
         }
       })}
     </>

@@ -232,6 +232,15 @@
       hero-zoom 2.4s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
+  /* Joint explorer: the details card eases in each time a new joint is picked */
+  .joint-swap {
+    animation: hero-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  /* ...and a thin bar on the photo counts down to the next joint while it auto-cycles */
+  .joint-timer {
+    animation: draw-x linear both;
+  }
+
   /* Scroll reveal for every section below the banner */
   @supports (animation-timeline: view()) {
     main section:not(.hero) :is(.container-x > *, li),

@@ -4,5 +4,5 @@ import { arthritis } from "@/lib/pages";
 export const metadata = pageMetadata(arthritis);
 
 export default function Page() {
-  return <ContentPage page={arthritis} />;
+  return <ContentPage page={arthritis} homeFooter />;
 }

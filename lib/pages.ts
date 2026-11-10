@@ -34,7 +34,28 @@ export type Block =
       note: string;
       cta: Cta;
       image: string;
+    }
+  | {
+      /** Interactive body map: tap a joint to see its common signs and how physio helps */
+      type: "joints";
+      eyebrow: string;
+      heading: string;
+      intro: string;
+      joints: Joint[];
+      cta: Cta;
     };
+
+export type JointId = "neck" | "shoulder" | "hip" | "knee" | "foot";
+export type Joint = {
+  id: JointId;
+  name: string;
+  signs: string;
+  helps: string[];
+  /** Photo shown while this joint is selected */
+  image: string;
+  /** Optional related page, e.g. hydrotherapy */
+  link?: { label: string; href: string };
+};
 
 export type JourneyArt = "assess" | "team" | "treat" | "recover";
 
@@ -175,10 +196,71 @@ export const arthritis: PageContent = {
       image: "/images/pages/arthritis-relief.jpg",
     },
     {
-      type: "banner",
-      heading: "We personalise treatments to suit your condition",
-      cta: contact("Contact us"),
-      image: "/images/services/equipment-banner.webp",
+      type: "joints",
+      eyebrow: "Where does it hurt?",
+      heading: "We personalise treatment to your joints",
+      intro: "Arthritis feels different in every joint. Tap a joint to see the common signs and how our physiotherapists can help.",
+      joints: [
+        {
+          id: "knee",
+          image: "/images/clinic-6.jpg",
+          name: "Knees",
+          signs: "Stiffness on the stairs, trouble getting up from a chair, and swelling after a long walk.",
+          helps: [
+            "Thigh and hip strengthening to take load off the knee",
+            "Hands-on mobilisation to ease stiffness",
+            "Braces or Gaitscan™ custom orthotics where alignment adds strain",
+          ],
+          link: { label: "Low-impact exercise in hydrotherapy", href: "/hydrotherapy/" },
+        },
+        {
+          id: "hip",
+          image: "/images/clinic-5.jpg",
+          name: "Hips",
+          signs: "An ache in the groin or outer hip, and stiffness putting on shoes and socks.",
+          helps: [
+            "Graded strengthening for the glutes and core",
+            "Stretching to restore range of motion",
+            "Advice on walking aids and pacing your day",
+          ],
+          link: { label: "Take the weight off with hydrotherapy", href: "/hydrotherapy/" },
+        },
+        {
+          id: "shoulder",
+          image: "/images/clinic-2.jpg",
+          name: "Shoulders",
+          signs: "Pain reaching overhead or behind your back, and an ache at night.",
+          helps: [
+            "Soft tissue and mobilisation techniques",
+            "Strengthening around the shoulder blade",
+            "A home program to keep the movement you gain",
+          ],
+        },
+        {
+          id: "neck",
+          image: "/images/back-pain.jpg",
+          name: "Neck & back",
+          signs: "Morning stiffness and an ache that eases once you get moving.",
+          helps: [
+            "Mobility and core-strength exercises",
+            "Posture and sleeping-position advice",
+            "Manual therapy and heat to settle flare-ups",
+          ],
+          link: { label: "Back pain treatment", href: "/back-pain/" },
+        },
+        {
+          id: "foot",
+          image: "/images/equipment.jpg",
+          name: "Ankles & feet",
+          signs: "Painful first steps in the morning and soreness on hard ground.",
+          helps: [
+            "Gaitscan™ footprint scan and custom orthotics",
+            "Supportive footwear, including therapeutic sandals",
+            "Balance and strength work to steady each step",
+          ],
+        },
+      ],
+      cta: contact("Book an assessment"),
     },
     {
       type: "split",
