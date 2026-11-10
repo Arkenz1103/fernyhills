@@ -241,38 +241,63 @@
     animation: draw-x linear both;
   }
 
-  /* Scroll reveal for every section below the banner */
-  @supports (animation-timeline: view()) {
-    main section:not(.hero) :is(.container-x > *, li),
-    main section.container-x:not(.hero) > * {
-      animation: fade-up linear both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 22%;
-    }
+}
 
-    /* Stagger items that sit side by side in a row */
-    main section:not(.hero) li:nth-child(3n + 2) {
-      animation-range: entry 5% cover 26%;
-    }
-    main section:not(.hero) li:nth-child(3n) {
-      animation-range: entry 10% cover 30%;
-    }
+/* ---------- Reveal: smooth, once, on scroll and on page load ----------
+   components/Reveal.tsx sets data-in as each element comes into view. html[data-reveal] is
+   set by an inline script in the layout before first paint (not with reduced motion), so
+   nothing flashes in before it animates. Keep the selectors in step with Reveal.tsx. */
+:root {
+  --reveal-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
 
-    /* Lists of small items (e.g. suburb buttons) arrive together as one block */
-    main section:not(.hero) .reveal-group > li {
-      animation: none;
-    }
+/* Waiting to come into view */
+html[data-reveal] main section:not(.hero):not(.no-reveal) .container-x > *:not([data-in]),
+html[data-reveal] main section.container-x:not(.hero):not(.no-reveal) > *:not([data-in]),
+html[data-reveal] main section:not(.hero):not(.no-reveal) li:not(.reveal-group > li):not([data-in]),
+html[data-reveal] main section:not(.hero):not(.no-reveal) :is(.heading, h2):not([data-in]),
+html[data-reveal] main section:not(.hero):not(.no-reveal) .rounded-3xl:has(> img):not([data-in]) {
+  opacity: 0;
+}
 
-    /* Sections with their own scroll animation (e.g. the pinned treatment journey) opt out */
-    main section.no-reveal :is(.container-x > *, li, img) {
-      animation: none;
-    }
+/* Content blocks, list items and headings: soft focus and faded, sharpening into place */
+html[data-reveal] main section:not(.hero):not(.no-reveal) .container-x > [data-in],
+html[data-reveal] main section.container-x:not(.hero):not(.no-reveal) > [data-in],
+html[data-reveal] main section:not(.hero):not(.no-reveal) li[data-in] {
+  animation: blur-in 0.6s var(--reveal-ease) var(--reveal-delay, 0ms) backwards;
+}
+html[data-reveal] main section:not(.hero):not(.no-reveal) :is(.heading, h2)[data-in] {
+  animation: blur-in 0.6s var(--reveal-ease) 40ms backwards;
+}
+/* Photo frames fade in while the photo inside un-blurs and settles from a slight zoom
+   (the frame's rounded, overflow-hidden edge keeps the blur from spilling out) */
+html[data-reveal] main section:not(.hero):not(.no-reveal) .rounded-3xl[data-in]:has(> img) {
+  animation: fade-in 0.45s var(--reveal-ease) backwards;
+}
+html[data-reveal] main section:not(.hero):not(.no-reveal) img[data-in] {
+  animation: blur-zoom 0.85s var(--reveal-ease) backwards;
+}
 
-    /* Photos ease from a slight zoom as they arrive */
-    main section:not(.hero) img:not(.object-contain) {
-      animation: settle-zoom linear both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 45%;
-    }
+@keyframes blur-in {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+
+@keyframes blur-zoom {
+  from {
+    filter: blur(16px);
+    transform: scale(1.06);
+  }
+  to {
+    filter: blur(0);
+    transform: none;
   }
 }

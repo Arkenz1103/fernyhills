@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Reveal from "@/components/Reveal";
 import "./globals.css";
+
+/**
+ * Turns on the scroll/load reveal before first paint, so content waiting to animate in never
+ * flashes first. Skipped with reduced motion, or if JavaScript is off, so content always shows.
+ */
+const revealScript = `if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.setAttribute("data-reveal","")`;
 
 const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"], display: "swap" });
 
@@ -18,7 +25,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-AU" className={dmSans.variable}>
+    // suppressHydrationWarning: the reveal script adds data-reveal to <html> before React hydrates
+    <html lang="en-AU" className={dmSans.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: revealScript }} />
+      </head>
       <body>
         <a
           href="#main"
@@ -29,6 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
+        <Reveal />
       </body>
     </html>
   );
